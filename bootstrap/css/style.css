@@ -158,6 +158,19 @@ body {
     height:30px;
 }
 
+.container-desc-col-3 {
+    display:inline-block;
+    width:32%;
+    text-align:center;
+}
+
+.container-desc-col-4 {
+    display:inline-block;
+    width:24%;
+    text-align:center;
+}
+
+
 .gallery-content {
     position:absolute;
     left:0px;
@@ -438,7 +451,6 @@ body {
     width:520px;
 }
 
-
 .opensource-projects {
     display:inline-block;
     width:45%;
@@ -461,5 +473,21 @@ body {
     margin-left:15px;
 }
 
+#quick-links a img {
+    width:180px;
+    height:120px;
+    box-shadow:none;
+    -webkit-transition:box-shadow .5s;
+    -moz-transition:box-shadow .5s;
+    -o-transition:box-shadow .5s;
+    transition:box-shadow .5s;    
+}
 
+#quick-links a img:hover {
+    box-shadow:0 0 10px #5C88DA;
+    -webkit-transition:box-shadow .5s;
+    -moz-transition:box-shadow .5s;
+    -o-transition:box-shadow .5s;
+    transition:box-shadow .5s;
+}
 
