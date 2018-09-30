@@ -1,0 +1,41 @@
+#gallery-text {
+    filter: Alpha(opacity=80); /* IE6/IE7/8 */
+}
+
+#arrows-left {
+    filter: Alpha(opacity=50); /* IE6/IE7/8 */
+}
+
+#arrows-right {
+    filter: Alpha(opacity=50); /* IE6/IE7/8 */
+}
+
+#arrows-left:hover {
+    filter: Alpha(opacity=99); /* IE6/IE7/8 */
+}
+#arrows-right:hover {
+    filter: Alpha(opacity=99); /* IE6/IE7/8 */
+}
+
+#warning {
+    width:100%;
+    min-width:940px;
+    background-color:#000;
+}
+#warning p {
+    font-size:12px;
+    margin-top:0px;
+    margin-bottom:0px;
+    text-align:center;
+}
+.backToTop {
+    filter: Alpha(opacity=60);
+}
+#top-banner {
+    filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#010101', endColorstr='#232323',GradientType=0 );
+ 	background:linear-gradient(top, #010101 0%, #232323 100%);
+}
+#bottom-banner {
+    filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#000000',GradientType=0 );
+ 	background:linear-gradient(top, #222222 0%, #000000 100%);
+}

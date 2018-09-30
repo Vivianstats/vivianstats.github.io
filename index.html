@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta name="description" content="Welcome to Wei's Homepage">
+    <title>Wei's Homepage</title>
+    <link rel='stylesheet' href='./bootstrap/css/style.css' type='text/css'>
+    <!--[if lte IE 8]>
+    <link rel='stylesheet' href='./css/style-ie.css' type='text/css'>
+    <![endif]-->
+
+    <link rel="stylesheet" href="./bootstrap/leaflet/leaflet.css"/>
+    <!-- make sure you put this AFTER Leaflet's CSS -->
+    <script src="./bootstrap/leaflet/leaflet.js"></script>
+    <script src="./bootstrap/js/jquery-3.3.1.min.js"></script>
+  </head>
+
+  <body>
+    <div id="top-banner" class="banner">
+      <!-- <img style="position:absolute;left:450px;" src="./img/title-logo.png"> -->
+    </div>
+    <div id="main-body" class="wrapper">
+      <div id="site-title">
+        <div id="name">Wei Vivian Li
+          <div id="subname">PhD Candidate in Statistics</div>
+        </div>
+        <div id="access">
+          <ul id="nav">
+            <li><a id="link-contact" href="#contact" onclick="changeNavState(id)">TEACHING</a></li>
+            <li><a id="link-projects" href="#projects" onclick="changeNavState(id)">PUBLICATION</a></li>
+            <li><a id="link-research" href="#research" onclick="changeNavState(id)">RESEARCH</a></li>
+            <li><a id="link-about" href="#about" onclick="changeNavState(id)">ABOUT</a></li>
+            <li><a id="link-home" href="#home" onclick="changeNavState(id)">HOME</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="content">
+        <!-- will be filled by javascript -->
+      </div>
+    </div>
+    <!-- home tab -->
+    <script id="home-content" type="text/x-content">
+      <div id="home-gallery">
+        <div id="gallery-background" class="gallery-content">
+          <span class="gallery-photo" style="opacity:1;filter:Alpha(opacity=100)">
+            <img src="./bootstrap/img/gallery-photo1.jpg">
+          </span>        
+          <span class="gallery-photo" style="opacity:0;filter:Alpha(opacity=0)">
+            <img src="./bootstrap/img/gallery-photo2.jpg">
+          </span>
+          <span class="gallery-photo" style="opacity:0;filter:Alpha(opacity=0)">
+            <img src="./bootstrap/img/gallery-photo3.jpg">
+          </span>
+          <!-- two arrows switching photos -->
+          <span id="arrows-left" onclick="window.clearInterval(timer); changePhotoLeft();timer = window.setInterval(changePhotoLeft,4000);">
+            <img src="./bootstrap/img/arrows-left.png">
+          </span>
+          <span id="arrows-right" onclick="window.clearInterval(timer); changePhotoRight();timer = window.setInterval(changePhotoRight,4000);">
+            <img src="./bootstrap/img/arrows-right.png">
+          </span>
+        </div>
+        <div id="gallery-text" class="gallery-content">
+          <h1>Welcome to my homepage</h1>
+          <div id="gallery-description">
+            <p id="gallery-description-showing">A collection of my research and teaching activities</p>
+            <p id="gallery-description-hidden"></p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="./bootstrap/img/gallery-bottom.png" style="width:940px;height:40px;margin-bottom:24px;">
+      </div>
+      <div class="container-outside">
+        <div class="container-block">
+	  <h1>Quick Links</h1>
+          <div class="container-description">
+	    <div class="container-desc-col-2">
+	      <p>Github <a href="https://github.com/Vivianstats" target="_blank">@Vivianstats</a>, Twitter <a href="https://twitter.com/vivianstats" target="_blank">@vivianstats</a></p>
+	    </div>
+	    <div class="container-desc-col-2">
+	      <p>Publications on <a href="https://scholar.google.com/citations?hl=en&user=HzjANkQAAAAJ&view_op=list_works&gmla=AJsN-F7oHApZV5lNCiv17_ONvm40Rp-5StN3AiRuGe0wVUoe6E5SPKOjC5L3ZLF18OoymwIfmE3WVpEWiFNBDZqLkiXc0L4VZOXDMBXX-N_OcQqpve6eTjY" target="_blank">GoogleScholar</a>, <a href="https://www.researchgate.net/profile/Wei_Vivian_Li" target="_blank">ResearchGate</a></p>
+	    </div>
+	    <div class="container-desc-col-2">
+	      <p>University of California, Los Angeles: <a href="https://twitter.com/vivianstats" target="_blank">Visit</a></p>
+	    </div>
+	    <div class="container-desc-col-2">
+	      <p>The Junction of Statistics and Biology Lab: <a href="http://jsb.ucla.edu/contact" target="_blank">Visit</a></p>
+	    </div>
+          </div>
+	</div>
+      </div>
+    </script>
+
+    <!-- research tab -->
+    <script id="research-content" type="text/x-content">
+      <div class="container-outside">
+        <div class="container-block">
+          <h1>Sample-level Modeling</h1>
+          <div class="container-description">
+            <span id="research-photo">
+              <img src="./bootstrap/img/research-trom.png">
+            </span>	    
+            <div id="research-text" class="container-text">
+              <div>
+	        <h3>TROM</h3>
+		<p>We propose a testing-based method TROM (Transcriptome Overlap Measure) for comparing transcriptomes within or between different species, and provide a different perspective, in contrast to traditional correlation analyses, about capturing transcriptomic similarity. Specifically, the TROM method focuses on identifying associated genes that capture molecular characteristics of biological samples, and subsequently comparing the biological samples by testing the overlap of their associated genes.</p>
+              </div>	      
+            </div>
+          </div>
+          <div class="container-description">
+            <span id="research-photo">
+              <img src="./bootstrap/img/research-epom.png">
+            </span>	    
+            <div id="research-text" class="container-text">
+              <div>
+	        <h3>EPOM</h3>
+		<p>The proposed EPOM measure demonstrates superior capability in grouping and finding a clear correspondence map of biological samples from different tissue and cell types. The identified associated enhancers and promoters provide a comprehensive catalog to study distinct biological processes and disease variants in different tissue and cell types. Our results also find that the associated promoters exhibit more cell-type-specific functions than the associated enhancers do, suggesting that the non-associated promoters have more housekeeping functions than the non-associated enhancers.</p>
+              </div>	      
+            </div>
+          </div>
+	</div>
+	
+	<div class="container-block">
+          <h1>Gene-level Modeling</h1>
+          <div class="container-description">
+            <span id="research-photo">
+              <img src="./bootstrap/img/research-scimpute.png">
+            </span>
+            <div id="research-text" class="container-text">
+              <div>
+	        <h3>scImpute</h3>
+		<p>We introduce scImpute, a statistical method to accurately and robustly impute the dropouts in scRNA-seq data. scImpute automatically identifies likely dropouts, and only perform imputation on these values without introducing new biases to the rest data. scImpute also detects outlier cells and excludes them from imputation. Evaluation based on both simulated and real human and mouse scRNA-seq data suggests that scImpute is an effective tool to recover transcriptome dynamics masked by dropouts.</p>
+              </div>
+            </div>
+          </div>
+	</div>
+
+	<div class="container-block">
+          <h1>Transcript-level Modeling</h1>
+          <div class="container-description">
+            <span id="research-photo">
+              <img src="./bootstrap/img/research-msiq.png">
+            </span>	    
+            <div id="research-text" class="container-text">
+              <div>
+	        <h3>MSIQ</h3>
+		<p>We develop a method, which we call "joint modeling of multiple RNA-seq samples for accurate isoform quantification" (MSIQ), for more robust isoform quantification by integrating multiple RNA-seq samples under a Bayesian framework. Our method aims to (1) identify a consistent group of samples with homogeneous quality and (2) improve isoform quantification accuracy by jointly modeling multiple RNA-seq samples and allowing for higher weights on the consistent group.</p>
+              </div>	      
+            </div>
+          </div>
+          <div class="container-description">
+            <span id="research-photo">
+              <img src="./bootstrap/img/research-aide.png">
+            </span>	    
+            <div id="research-text" class="container-text">
+              <div>
+	        <h3>AIDE</h3>
+		<p>AIDE is a statistical method which identifies full-length mRNA isoforms from a novel perspective: using the likelihood ratio test to find novel isoforms in a stepwise manner given annotated isoforms, by prioritizing and selectively borrowing information from the annotated isoforms.</p>
+              </div>	      
+            </div>
+          </div>
+	</div>
+
+      </div>
+    </script>
+
+    <!-- projects tab -->
+    <script id="projects-content" type="text/x-content">
+      <div class="container-outside">
+        <div class="container-block">
+          <h1>Publications</h1>
+          <div class="container-description">
+            <ul>
+	      <li><b>Li, W.V.</b> and Li, J.J. (2018). Modeling and analysis of RNA-seq data: a review from a statistical perspective. <b>Quantitative Biology</b>. 
+	        <p>[ <a href="https://link.springer.com/article/10.1007/s40484-018-0144-7" target="_blank">Link</a> ]</p></li>
+	      <li><b>Li, W.V.*</b>, Zhao, A., Zhang, S., and Li, J.J.* (2018). MSIQ: joint modeling of multiple RNA-seq samples for accurate isoform quantification. <b>Annals of Applied Statistics</b> 12(1):510-539. 
+	        <p>[ <a href="https://projecteuclid.org/euclid.aoas/1520564482" target="_blank">Link</a> ] [ <a href="https://github.com/Vivianstats/MSIQ" target="_blank">Software</a> ]</p></li>
+		<li><b>Li, W.V.</b> and Li, J.J. (2018). An accurate and robust imputation method scImpute for single-cell RNA-seq data. <b>Nature Communications</b> 9:997.
+	          <p>[ <a href="https://www.nature.com/articles/s41467-018-03405-7" target="_blank">Link</a> ] [ <a href="http://newsroom.ucla.edu/releases/ucla-scientists-merge-statistics-biology-to-produce-important-new-gene-computational-tool" target="_blank">UCLA News</a> ] [ <a href="https://github.com/Vivianstats/scImpute" target="_blank">Software</a> ]</p></li>
+		<li><b>Li, W.V.</b>, Chen, Y., and Li, J.J. (2017). TROM: a testing-based method for finding transcriptomic similarity of biological samples. <b>Statistics in Biosciences</b> 9(1):105-136.
+	          <p>[ <a href="https://link.springer.com/article/10.1007/s12561-016-9163-y" target="_blank">Link</a> ] [ <a href="https://cran.r-project.org/web/packages/TROM/index.html" target="_blank">Software</a> ]</p></li>
+                <li><b>Li, W.V.</b>, Razaee, Z.S., and Li, J.J. (2016). Epigenome overlap measure (EPOM) for comparing tissue/cell types based on chromatin states. <b>BMC Genomics</b> 17(Supp 1):10. 
+	          <p>[ <a href="https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-015-2303-9" target="_blank">Link</a> ] [ <a href="https://github.com/ruochenj/EPOM_R" target="_blank">Software</a> ]</p></li>
+	        <p>author* indicates equal contribution</p>
+            </ul>
+          </div>
+        </div>
+
+
+
+
+        <div class="container-block">
+          <h1>Softwares</h1>
+          <div class="container-description-reverse" style="margin-top:60px;">
+            <span>
+              <img src="./bootstrap/img/github-logo.png">
+            </span>
+            <div>
+              <h3>Single-cell Transcriptomics</h3>
+              <ul>
+	        <li><p><a href="https://github.com/Vivianstats/scImpute" target="_blank">sclmpute</a>: Accurate and robust imputation of scRNA-seq data</p></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="container-description-reverse">
+            <span>
+              <img src="./bootstrap/img/github-logo.png">
+            </span>
+            <div>
+	      <h3>Bulk Tissue Transcriptomics</h3>
+	      <ul>
+	        <li><p><a href="https://github.com/Vivianstats/AIDE" target="_blank">AIDE</a>: Annotation-assisted transcript reconstruction and quantification</p></li>
+		<li><p><a href="https://github.com/Vivianstats/MSIQ" target="_blank">MSIQ</a>: Quantification of RNA transcripts from multiple RNA-seq samples</p></li>
+	      </ul>
+            </div>
+          </div>
+
+          <div class="container-description-reverse">
+            <span>
+              <img src="./bootstrap/img/cran-logo.png">
+            </span>
+            <div>
+              <h3>Comparative Bioinformatics</h3>
+              <ul>
+	        <li><p><a href="https://cran.r-project.org/web/packages/TROM/index.html" target="_blank">TROM</a>: Comparing transcriptomes from the same or different species</p></li>
+                <li><p><a href="https://github.com/ruochenj/EPOM_R" target="_blank">EPOM</a>: Comparing epigenomes of biological samples</p></li>
+              </ul>
+            </div>
+          </div>
+	  <!-- only to add a little space at bottom -->
+	  <div style="height:40px;"></div> 
+        </div>
+      </div>
+    </script>
+
+    <!-- about tab -->
+    <script id="about-content" type="text/x-content">
+      <div class="container-outside">
+        <div class="container-block">
+          <h1>About me</h1>
+          <div class="container-description">
+            <span id="about-me-photo">
+              <img src="./bootstrap/img/about-me.png">
+            </span>
+            <div id="about-me-text" class="container-text">
+              <div>
+		<p>Wei is a Ph.D. candidate in the <a href="http://statistics.ucla.edu" target="_blank">Department of Statistics</a> at  <a href="http://www.ucla.edu" target="_blank">University of California, Los Angeles</a> (UCLA). She is a doctoral student researcher at the <a href="http://jsb.ucla.edu" target="_blank">Junction of Statistics and Biology </a> and the <a href="http://csrcb.stat.ucla.edu" target="_blank">Center for Statistical Research in Computational Biology</a>, working with Professor Jingyi Jessica Li. Prior to joining UCLA, Wei received her B.S. in Statistics from the School of Mathematics and Statistics at <a href="http://english.hust.edu.cn" target="_blank">Huazhong University of Science and Technology</a>, China, in 2014.</p>
+		<br>
+		<div style="width:15%;">
+		  <p>Address:</p>
+		  <br>
+		  <p>Email:</p>
+		</div>
+		<div style="width:75%;">
+  		  <p>8911 Math Sciences Bldg, Department of Statistics, UCLA, Los Angeles, CA, 90095-1554</p>
+		  <p>liw@ucla.edu</p>
+		</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-block">
+          <h1>Research Interests</h1>
+          <div class="container-description">
+            <!-- content of open source projects -->
+            <div class="opensource-projects">
+              <h3>Statistics</h3>
+	      <ul>
+	        <li>Statistical Learning</li>
+                <li>Hypothesis Testing</li>
+                <li>Bayesian Modeling</li>
+              </ul>
+            </div>
+	    <div class="opensource-projects">
+              <h3>Bioinformatics</h3>
+              <ul>
+	        <li>Single-cell genomics and transcriptomics</li>
+                <li>Bulk tissue transcriptomics</li>
+                <li>Comparative transcriptomics and epigenomics</li>
+              </ul>
+	    </div>	    
+          </div>
+        </div>
+      </div>
+    </script>
+    <!-- contact tab -->
+    <script id="contact-content" type="text/x-content">
+      <div class="container-outside">
+        <div class="container-block">
+          <h1>Teaching Assistanships (UCLA)</h1>
+          <div class="container-description">
+            <div>
+              <h3>Student Instructor</h3>
+              <ul>
+	        <li>Fall 2018, STATS 495A: Teaching College Statistics</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Teaching Assistant</h3>
+              <ul>
+	        <li>Summer 2016, STATS 101A: Introduction to Data Analysis and Regression</li>
+		<li>Winter 2016, STATS 13: Introduction to Statistical Methods for the Health and Life Sciences</li>
+		<li>Fall 2015, STATS 10: Introduction to Statistical Reasoning</li>
+		<li>Summer 2015, STATS 100B: Introduction to Mathematical Statistics</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-block">
+          <h1>Readerships (UCLA)</h1>
+          <div class="container-description">
+            <div>
+              <h3>Special Reader</h3>
+              <ul>
+	        <li>Spring 2018, STATS 207: Statistical Learning with Sparsity</li>
+		<li>Winter 2017, STATS 203: Large Sample Theory, Including Resampling</li>
+		<li>Winter 2017, STATS 205: Hierarchical Linear Models</li>
+		<li>Spring 2016, STATS M254: Statistical Methods in Computational Biology</li>
+		<li>Spring 2016, STATS 200C: Large Sample Theory</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Reader</h3>
+              <ul>
+	        <li>Spring 2015, STATS 100A: Introduction to Probability</li>
+		<li>Winter 2015, STATS 10: Introduction to Statistical Reasoning</li>
+		<li>Fall 2014, STATS 100A: Introduction to Probability</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </script>
+
+    
+    <!-- animation between tabs on navigation -->
+    <script async type="text/javascript" src="./bootstrap/js/application.js"></script>
+    <!-- go back to top function -->
+    <script type="text/javascript" src="./bootstrap/js/backtop.js"></script>
+    <!-- change gallery photo and description when click on arrows -->
+    <script type="text/javascript">
+      var gallery_photo_titles = new Array(
+        "Welcome to my homepage",
+        "Big thanks to the JSB lab",
+        "Life is beautiful at UCLA");
+      var gallery_photo_descriptions = new Array(
+        "A collection of my research and teaching activities",
+        "Photo with my PhD advisor Professor Jessica Li",
+        "My office window view at the Department of Statistics");
+      /* set up a timer to change gallery photo in time */
+      var timer = window.setInterval("changePhotoRight()", 8000);
+    </script>
+    <!-- extension function -->
+    <script type="text/javascript" src="./bootstrap/js/extension.js"></script>
+
+    <!-- footer shows my motto -->
+    <div id="bottom-banner" class="banner">
+      <div id="motto" class="wrapper">
+        <span>
+	  <img src="./bootstrap/img/hust-logo-small.jpg">
+	</span>
+        <span>
+	  <img src="./bootstrap/img/jsb-logo-small.jpg">
+	</span>
+        <span>
+	  <img src="./bootstrap/img/ucla-logo-small.jpg">
+	</span>
+      </div>
+    </div>
+  </body>
+
+  <!--[if lte IE 8]>
+  <div id="warning">
+    <p class="wrapper">*Detecting the current browser version is Microsoft Internet Explorer 8 (IE8) or below (IE7 IE6 etc.).</p>
+    <p class="wrapper">**It is highly recommended to use Chrome / Firefox / IE9 to gain the best animation experience of my portfolio website.</p>
+  </div>
+  <![endif]-->
+</html>
