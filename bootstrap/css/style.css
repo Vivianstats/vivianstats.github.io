@@ -16,18 +16,18 @@ body {
 }
 ::-webkit-scrollbar{
     width:8px;
-    background:#CCC;
+    background:#EEE2DC;
 }
 ::-webkit-scrollbar-thumb{
-    background:#3284BF;
+    background:#AC3B61;
 }
 
 #top-banner {
-	background:-moz-linear-gradient(top, #1E4B87 0%, #3284BF 100%);
-    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #1E4B87), color-stop(100%, #3284BF));
-	background:-webkit-linear-gradient(top, #1E4B87 0%, #3284BF 100%);
-	background:-o-linear-gradient(top, #1E4B87 0%, #3284BF 100%);
-	background:-ms-linear-gradient(top, #1E4B87 0%, #3284BF 100%);
+	background:-moz-linear-gradient(top, #501B1D 0%, #AC3B61 100%);
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #501B1D), color-stop(100%, #AC3B61));
+	background:-webkit-linear-gradient(top, #501B1D 0%, #AC3B61 100%);
+	background:-o-linear-gradient(top, #501B1D 0%, #AC3B61 100%);
+	background:-ms-linear-gradient(top, #501B1D 0%, #AC3B61 100%);
 	-webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.6);
 	-moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.6);
 	box-shadow:0 0 10px rgba(0, 0, 0, 0.6);
@@ -36,11 +36,11 @@ body {
     z-index:998;
 }
 #bottom-banner {
-	background:-moz-linear-gradient(top, #3284BF 0%, #1E4B87 100%);
-    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #3284BF), color-stop(100%, #1E4B87));
-	background:-webkit-linear-gradient(top, #3284BF 0%, #1E4B87 100%);
-	background:-o-linear-gradient(top, #3284BF 0%, #1E4B87 100%);
-	background:-ms-linear-gradient(top, #3284BF 0%, #1E4B87 100%);
+	background:-moz-linear-gradient(top, #AC3B61 0%, #501B1D 100%);
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #AC3B61), color-stop(100%, #501B1D));
+	background:-webkit-linear-gradient(top, #AC3B61 0%, #501B1D 100%);
+	background:-o-linear-gradient(top, #AC3B61 0%, #501B1D 100%);
+	background:-ms-linear-gradient(top, #AC3B61 0%, #501B1D 100%);
 	-webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.6);
 	-moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.6);
 	box-shadow:0 0 10px rgba(0, 0, 0, 0.6);
@@ -115,19 +115,19 @@ body {
     transition:color .5s;
 }
 #link-home:hover {
-    color:#ff4040;
+    color:#FFE800;
 }
 #link-research:hover {
-    color:#ff9A40;
+    color:#FFE800;
 }
 #link-projects:hover {
-    color:#FFF740;
+    color:#FFE800;
 }
 #link-about:hover {
-    color:#E439A1;
+    color:#FFE800;
 }
 #link-contact:hover {
-	color:#84BD00;
+	color:#FFE800;
 }
 
 #home-gallery {
@@ -139,7 +139,7 @@ body {
 
 #gallery-text {
     margin-top:330px;
-    background-color:#DDD;
+    background-color:#EEE2DC;
     opacity:0.8;
     min-height:107px;
     min-width:940px;
@@ -245,13 +245,13 @@ body {
     margin-bottom:50px;
 }
 .container-block {
-    background-color:#DDD;
+    background-color:#EEE2DC;
 }
 .container-block h1{
     position:relative;
     top:40px;
     left:40px;
-    color:#5C88DA;
+    color:#AC3B61;
 }
 .container-description {
     position:relative;
@@ -262,8 +262,8 @@ body {
 }
 
 .container-description a {
-    font-weight:bold;
-    color:#000;
+    /* font-weight:bold; */
+    color:#AC3B61;
     text-decoration:none;
     -webkit-transition:color .5s;
     -moz-transition:color .5s;
@@ -271,8 +271,8 @@ body {
     transition:color .5s;
 }
 .container-description a:hover {
-    font-weight:bold;
-    color:#5C88DA;
+    /* font-weight:bold; */
+    color:#501B1D;
     -webkit-transition:color .5s;
     -moz-transition:color .5s;
     -o-transition:color .5s;
@@ -307,8 +307,8 @@ body {
     margin-bottom:0px;
 }
 .container-description-reverse a {
-    color:#000;
-    font-weight:bold;
+    color:#AC3B61;
+    /* font-weight:bold; */
     text-decoration:none;
     -webkit-transition:color .5s;
     -moz-transition:color .5s;
@@ -316,7 +316,7 @@ body {
     transition:color .5s;
 }
 .container-description-reverse a:hover {
-    color:#5C88DA;
+    color:#501B1D;
     -webkit-transition:color .5s;
     -moz-transition:color .5s;
     -o-transition:color .5s;
@@ -420,7 +420,7 @@ body {
     width: 40px;
     line-height: 1.2;
     padding: 5px 0;
-    background-color: #3284BF;
+    background-color: #501B1D;
     color: #fff;
     font-size: 16px;
     font-weight:bold;
@@ -465,7 +465,7 @@ body {
     margin-top:10px;
     width:330px;
     height:150px;
-    background-color:#BBB;
+    background-color:#EEE2DC;
     margin-bottom:10px;
 }
 .opensource-screenshots img {
@@ -484,7 +484,7 @@ body {
 }
 
 #quick-links a img:hover {
-    box-shadow:0 0 10px #5C88DA;
+    box-shadow:0 0 10px #123C69;
     -webkit-transition:box-shadow .5s;
     -moz-transition:box-shadow .5s;
     -o-transition:box-shadow .5s;
