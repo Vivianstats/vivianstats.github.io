@@ -48,6 +48,9 @@
           <span class="gallery-photo" style="opacity:0;filter:Alpha(opacity=0)">
             <img src="./bootstrap/img/gallery-photo3.jpg">
           </span>
+          <span class="gallery-photo" style="opacity:0;filter:Alpha(opacity=0)">
+            <img src="./bootstrap/img/gallery-photo4.jpg">
+          </span>
           <!-- two arrows switching photos -->
           <span id="arrows-left" onclick="window.clearInterval(timer); changePhotoLeft();timer = window.setInterval(changePhotoLeft,4000);">
             <img src="./bootstrap/img/arrows-left.png">
@@ -278,7 +281,7 @@
             </span>
             <div id="about-me-text" class="container-text">
               <div>
-			    <p>Vivian obtained her Ph.D. degree in Statistics from <a href="http://www.ucla.edu" target="_blank">the University of California, Los Angeles</a> (UCLA). She was at the <a href="http://jsb.ucla.edu" target="_blank">Junction of Statistics and Biology </a> and the <a href="http://csrcb.stat.ucla.edu" target="_blank">Center for Statistical Research in Computational Biology</a>, working with Professor <a href="http://jsb.ucla.edu/about-jingyi-jessica-li" target="_blank">Jingyi Jessica Li</a>. Prior to joining UCLA, Wei received her B.S. in Statistics from the School of Mathematics and Statistics at <a href="http://english.hust.edu.cn" target="_blank">Huazhong University of Science and Technology</a> (HUST), China, in 2014.</p>
+				<p>Vivian is an Assistant Professor in the <a href="https://sph.rutgers.edu/concentrations/biostatistics-epidemiology/index.html" target="_blank">Department of Biostatistics and Epidemiology</a> at the <a href="https://www.rutgers.edu/" target="_blank">Rutgers University</a>. She obtained her Ph.D. degree in Statistics from the <a href="http://www.ucla.edu" target="_blank">University of California, Los Angeles</a> (UCLA). She was at the Junction of Statistics and Biology, working with Professor <a href="http://jsb.ucla.edu/about-jingyi-jessica-li" target="_blank">Jingyi Jessica Li</a>. Prior to joining UCLA, Vivian received her B.S. in Statistics from the School of Mathematics and Statistics at <a href="http://english.hust.edu.cn" target="_blank">Huazhong University of Science and Technology</a> (HUST) in 2014.</p>
 				<br>
 				<div style="width:15%;">
 				  <p>Address:</p>
@@ -286,8 +289,8 @@
 				  <p>Email:</p>
 				</div>
 				<div style="width:75%;">
-				  <p>8911 Math Sciences Bldg, Department of Statistics, UCLA, Los Angeles, CA, 90095-1554</p>
-				  <p>liw@ucla.edu</p>
+				  <p>School of Public Health, Room 210, <br>Rutgers, The State University of New Jersey.</p>
+				  <p>vivian.li@rutgers.edu</p>
 				</div>
               </div> <!-- container-text -->
             </div> <!-- container-description -->
@@ -398,12 +401,14 @@
     <script type="text/javascript">
       var gallery_photo_titles = new Array(
         "Welcome to my homepage",
-        "Big thanks to the JSB lab",
-        "Life is beautiful at UCLA");
+        "The Rutgers clock",
+        "Life is beautiful at UCLA",
+		"Forest-like campus of HUST");
       var gallery_photo_descriptions = new Array(
         "A collection of my research and teaching activities",
-        "Photo with my PhD advisor Professor Jessica Li",
-        "My office window view at the Department of Statistics");
+        "Starting a new chapter in my life",
+        "My office window view at the Department of Statistics",
+		"Rewarding experience as an undergraduate here");
       /* set up a timer to change gallery photo in time */
       var timer = window.setInterval("changePhotoRight()", 8000);
     </script>
@@ -414,14 +419,14 @@
     <div id="bottom-banner" class="banner">
       <div id="motto" class="wrapper">
         <span>
-	  <img src="./bootstrap/img/hust-logo-small.jpg">
-	</span>
-    <!--    <span>
-	  <img src="./bootstrap/img/jsb-logo-small.jpg">
-	</span> -->
+		  <img src="./bootstrap/img/hust-logo-small.jpg">
+		</span>
         <span>
-	  <img src="./bootstrap/img/ucla-logo-small.jpg">
-	</span>
+		  <img src="./bootstrap/img/ucla-logo-small.jpg">
+		</span>
+        <span>
+		  <img src="./bootstrap/img/rutgers-logo-small.jpg">
+		</span>
       </div>
     </div>
   </body>

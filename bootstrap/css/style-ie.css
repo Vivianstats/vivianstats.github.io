@@ -32,10 +32,10 @@
     filter: Alpha(opacity=60);
 }
 #top-banner {
-    filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#010101', endColorstr='#232323',GradientType=0 );
- 	background:linear-gradient(top, #010101 0%, #232323 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#1E4B87', endColorstr='#3284BF',GradientType=0 );
+ 	background:linear-gradient(top, #1E4B87 0%, #3284BF 100%);
 }
 #bottom-banner {
-    filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#000000',GradientType=0 );
- 	background:linear-gradient(top, #222222 0%, #000000 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#3284BF', endColorstr='#1E4B87',GradientType=0 );
+ 	background:linear-gradient(top, #3284BF 0%, #1E4B87 100%);
 }
