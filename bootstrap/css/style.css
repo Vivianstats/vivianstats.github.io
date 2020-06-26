@@ -349,13 +349,13 @@ body {
 #qr-code {
     float:right;
 }
-#about-me-photo {
-    width:300px;
+#about-me-photo img {
+    width:250px;
     height:250px;
     overflow:hidden;
 }
 #about-me-text {
-    width:520px;
+    width:580px;
 }
 
 #about-me-text div {
@@ -442,13 +442,13 @@ body {
 }
 
 
-#research-photo {
+#research-photo img {
     width:300px;
     height:200px;
     overflow:hidden;
 }
 #research-text {
-    width:520px;
+    width:530px;
 }
 
 .opensource-projects {

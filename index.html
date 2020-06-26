@@ -60,7 +60,7 @@
           </span>
         </div>
         <div id="gallery-text" class="gallery-content">
-          <h1>Welcome to my homepage</h1>
+          <h1>Welcome to Vivian Li Lab</h1>
           <div id="gallery-description">
             <p id="gallery-description-showing">A collection of my research and teaching activities</p>
             <p id="gallery-description-hidden"></p>
@@ -101,8 +101,61 @@
     <!-- research tab -->
     <script id="research-content" type="text/x-content">
       <div class="container-outside">
+
+	    <div class="container-block">
+          <h1>Single-cell Genomics</h1>
+          <div class="container-description">
+            <span id="research-photo">
+              <img src="./bootstrap/img/research-scimpute.png">
+            </span>
+            <div id="research-text" class="container-text">
+              <div>
+			    <h3>Imputation of scRNA-seq Data</h3>
+				<p>scImpute is a statistical method to accurately and robustly impute the dropouts in scRNA-seq data. scImpute automatically identifies likely dropouts, and only perform imputation on these values without introducing new biases to the rest data. scImpute is shown to identify likely dropouts, enhance the clustering of cell subpopulations, improve the accuracy of differential expression analysis, and aid the study of gene expression dynamics. [ <a href="https://www.nature.com/articles/s41467-018-03405-7" target="_blank">Link</a> ]</p>
+              </div>
+            </div> <!-- container-text -->
+          </div> <!-- container-description -->
+          <div class="container-description">
+            <span id="research-photo">
+              <img src="./bootstrap/img/research-scdesign.png">
+            </span>     
+            <div id="research-text" class="container-text">
+              <div>
+			    <h3>Rational scRNA-seq Experimental Design</h3>
+				<p>We present a flexible and robust simulator, scDesign, the first statistical framework for researchers to quantitatively assess practical scRNA-seq experimental design in the context of differential gene expression analysis. In addition to experimental design, scDesign also assists computational method development by generating high-quality synthetic scRNA-seq datasets under customized experimental settings. [ <a href="https://www.biorxiv.org/content/early/2018/10/07/437095" target="_blank">Link</a> ]</p>
+              </div>        
+            </div> <!-- container-text -->
+          </div> <!-- container-description -->          
+		</div> <!-- container-block -->
+
+		<div class="container-block">
+          <h1>RNA Transcript Assembly and Quantification</h1>
+          <div class="container-description">
+            <span id="research-photo">
+              <img src="./bootstrap/img/research-aide.png">
+            </span>	    
+            <div id="research-text" class="container-text">
+              <div>
+			    <h3>Annotation-assisted Transcript Reconstruction</h3>
+				<p>AIDE is a statistical method which identifies full-length mRNA isoforms from a novel perspective: using the likelihood ratio test to find novel isoforms in a stepwise manner given annotated isoforms, by prioritizing and selectively borrowing information from the annotated isoforms. AIDE is the first approach that directly controls false isoform discoveries by implementing the statistical model selection principle. [ <a href="https://genome.cshlp.org/content/29/12/2056" target="_blank">Link</a> ]</p>
+              </div>	      
+            </div> <!-- container-text -->
+          </div> <!-- container-description -->
+          <div class="container-description">
+            <span id="research-photo">
+              <img src="./bootstrap/img/research-msiq.png">
+            </span>	    
+            <div id="research-text" class="container-text">
+              <div>
+			    <h3>Transcript Quantification of Multiple RNA-seq Samples</h3>
+				<p>We develop a method, which we call "joint modeling of multiple RNA-seq samples for accurate isoform quantification" (MSIQ), for more robust isoform quantification by integrating multiple RNA-seq samples under a Bayesian framework. Our method aims to (1) identify a consistent group of samples with homogeneous quality and (2) improve isoform quantification accuracy by jointly modeling multiple RNA-seq samples and allowing for higher weights on the consistent group. [ <a href="https://projecteuclid.org/euclid.aoas/1520564482" target="_blank">Link</a> ]</p>
+              </div>	      
+            </div> <!-- container-text -->
+          </div> <!-- container-description -->
+		</div> <!-- container-block -->
+
         <div class="container-block">
-          <h1>Sample-level Modeling</h1>
+          <h1>Comparative Bioinformatics</h1>
           <div class="container-description">
             <span id="research-photo">
               <img src="./bootstrap/img/research-trom.png">
@@ -125,60 +178,8 @@
               </div>	      
             </div> <!-- container-text -->
           </div> <!-- container-description -->
-          <div class="container-description">
-            <span id="research-photo">
-              <img src="./bootstrap/img/research-scdesign.png">
-            </span>     
-            <div id="research-text" class="container-text">
-              <div>
-			    <h3>Rational scRNA-seq Experimental Design</h3>
-				<p>We present a flexible and robust simulator, scDesign, the first statistical framework for researchers to quantitatively assess practical scRNA-seq experimental design in the context of differential gene expression analysis. In addition to experimental design, scDesign also assists computational method development by generating high-quality synthetic scRNA-seq datasets under customized experimental settings. [ <a href="https://www.biorxiv.org/content/early/2018/10/07/437095" target="_blank">Link</a> ]</p>
-              </div>        
-            </div> <!-- container-text -->
-          </div> <!-- container-description -->
 		</div> <!-- container-block -->
-	
-	    <div class="container-block">
-          <h1>Gene-level Modeling</h1>
-          <div class="container-description">
-            <span id="research-photo">
-              <img src="./bootstrap/img/research-scimpute.png">
-            </span>
-            <div id="research-text" class="container-text">
-              <div>
-			    <h3>Imputation of scRNA-seq Data</h3>
-				<p>scImpute is a statistical method to accurately and robustly impute the dropouts in scRNA-seq data. scImpute automatically identifies likely dropouts, and only perform imputation on these values without introducing new biases to the rest data. scImpute is shown to identify likely dropouts, enhance the clustering of cell subpopulations, improve the accuracy of differential expression analysis, and aid the study of gene expression dynamics. [ <a href="https://www.nature.com/articles/s41467-018-03405-7" target="_blank">Link</a> ]</p>
-              </div>
-            </div> <!-- container-text -->
-          </div> <!-- container-description -->
-		</div> <!-- container-block -->
-		
-		<div class="container-block">
-          <h1>Transcript-level Modeling</h1>
-          <div class="container-description">
-            <span id="research-photo">
-              <img src="./bootstrap/img/research-msiq.png">
-            </span>	    
-            <div id="research-text" class="container-text">
-              <div>
-			    <h3>Transcript Quantification of Multiple RNA-seq Samples</h3>
-				<p>We develop a method, which we call "joint modeling of multiple RNA-seq samples for accurate isoform quantification" (MSIQ), for more robust isoform quantification by integrating multiple RNA-seq samples under a Bayesian framework. Our method aims to (1) identify a consistent group of samples with homogeneous quality and (2) improve isoform quantification accuracy by jointly modeling multiple RNA-seq samples and allowing for higher weights on the consistent group. [ <a href="https://projecteuclid.org/euclid.aoas/1520564482" target="_blank">Link</a> ]</p>
-              </div>	      
-            </div> <!-- container-text -->
-          </div> <!-- container-description -->
-          <div class="container-description">
-            <span id="research-photo">
-              <img src="./bootstrap/img/research-aide.png">
-            </span>	    
-            <div id="research-text" class="container-text">
-              <div>
-			    <h3>Annotation-assisted Transcript Reconstruction</h3>
-				<p>AIDE is a statistical method which identifies full-length mRNA isoforms from a novel perspective: using the likelihood ratio test to find novel isoforms in a stepwise manner given annotated isoforms, by prioritizing and selectively borrowing information from the annotated isoforms. AIDE is the first approach that directly controls false isoform discoveries by implementing the statistical model selection principle. [ <a href="https://genome.cshlp.org/content/29/12/2056" target="_blank">Link</a> ]</p>
-              </div>	      
-            </div> <!-- container-text -->
-          </div> <!-- container-description -->
-		</div> <!-- container-block -->
-		
+					
 		<div class="container-block">
           <h1>Statistical Learning</h1>
           <div class="container-description">
@@ -204,7 +205,7 @@
           <h1>Publications</h1>
           <div class="container-description">
             <ul>
-			  <li><b>Li, W.V.</b>*, Li, S.*, Tong, X., Deng, L., Shi, H., and Li, J. J. (2018). AIDE: annotation-assisted isoform discovery and abundance estimation from RNA-seq data. <b><i>Genome Research</i></b> 29:2056-2072.
+			  <li><b>Li, W.V.</b>*, Li, S.*, Tong, X., Deng, L., Shi, H., and Li, J. J. (2019). AIDE: annotation-assisted isoform discovery and abundance estimation from RNA-seq data. <b><i>Genome Research</i></b> 29:2056-2072.
                 <p>[ <a href="https://genome.cshlp.org/content/29/12/2056" target="_blank">Link</a> ] [ <a href="https://github.com/Vivianstats/AIDE" target="_blank">Software</a> ] [ <a href="https://genome.cshlp.org/content/29/12.cover-expansion" target="_blank">Cover Story</a> ] [ <a href="https://www.aspph.org/rutgers-study-achieves-highest-precision-and-lowest-error-rates-in-mrna-discoveries-using-a-robust-bioinformatics-tool/" target="_blank">ASPPH News</a> ]</p></li>
               <li><b>Li, W.V.</b> and Li, J.J. (2019). A statistical simulator scDesign for rational scRNA-seq experimental design. <b><i>Bioinformatics</i></b> 35(14):i41-i50.
                 <p>[ <a href="https://academic.oup.com/bioinformatics/article/35/14/i41/5529133" target="_blank">Link</a> ] [ <a href="https://github.com/Vivianstats/scDesign" target="_blank">Software</a> ]</p></li>
@@ -226,7 +227,7 @@
         </div>
 
         <div class="container-block">
-          <h1>Softwares</h1>
+          <h1>Software</h1>
           <div class="container-description-reverse" style="margin-top:60px;">
             <span>
               <img src="./bootstrap/img/github-logo.png">
@@ -275,7 +276,7 @@
     <script id="about-content" type="text/x-content">
       <div class="container-outside">
         <div class="container-block">
-          <h1>About me</h1>
+          <h1>About PI</h1>
           <div class="container-description">
             <span id="about-me-photo">
               <img src="./bootstrap/img/about-me.png">
@@ -300,7 +301,7 @@
 		<div class="container-block">
           <h1>Research Interests</h1>
           <div class="container-description">
-          	<p>Our lab is broadly interested in statistical modeling and algorithm development, as well as their applications to high-throughput data in bioinfomatics and clinical research.</p>
+          	<p>Our lab is broadly interested in statistical modeling and algorithm development, as well as their applications to high-throughput sequencing data in bioinfomatic and clinical research. Major research topics of our lab include:</p>
           	<ul>
           	  <li>Statistical modeling and experimental design of</li>
           	  <ul>
@@ -404,7 +405,7 @@
     <!-- change gallery photo and description when click on arrows -->
     <script type="text/javascript">
       var gallery_photo_titles = new Array(
-        "Welcome to my homepage",
+        "Welcome to Vivian Li Lab",
         "The Rutgers clock",
         "Life is beautiful at UCLA",
 		"Forest-like campus of HUST");
