@@ -61,6 +61,9 @@
           <span class="gallery-photo" style="opacity:0;filter:Alpha(opacity=0)">
             <img src="./bootstrap/img/gallery-photo4.jpg">
           </span>
+          <span class="gallery-photo" style="opacity:0;filter:Alpha(opacity=0)">
+            <img src="./bootstrap/img/gallery-photo5.jpg">
+          </span>
           <!-- two arrows switching photos -->
           <span id="arrows-left" onclick="window.clearInterval(timer); changePhotoLeft();timer = window.setInterval(changePhotoLeft,4000);">
             <img src="./bootstrap/img/arrows-left.png">
@@ -80,39 +83,56 @@
       <div>
         <img src="./bootstrap/img/gallery-bottom.png" style="width:940px;height:40px;margin-bottom:24px;">
       </div>
+
       <div class="container-outside">
+
+        <div class="container-block">
+          <h1>News</h1>
+          <div class="container-description">
+            <ul>
+        <li><b>09/2020</b> New preprint! Our manuscript about constructing gene co-expression networks in single cells is now available on <a href="https://www.biorxiv.org/content/10.1101/2020.09.19.304956v1" target="_blank">bioRxiv</a>.</li>
+        <li><b>09/2020</b> Vivian received the Busch Biomedical Grant Award.</li>
+        <li><b>06/2020</b> Vivian received the BERD Method Grant from New Jersey Alliance for Clinical and Translational Science (<a href="https://njacts.rbhs.rutgers.edu/" target="_blank">NJ ACTS</a>).</li>
+            </ul>
+          </div> <!-- container-description -->
+        </div> <!-- container-block -->
+
         <div id="quick-links" class="container-block">
-	  <h1>Quick Links</h1>
-	  <div class="container-description">
-	    <div class="container-desc-col-4">
-	      <a href="https://github.com/Vivianstats" target="_blank">
-	      <span><img src="./bootstrap/img/my-github-logo.png"></span></a>
-	    </div>
+          <h1>Quick Links</h1>
+          <div class="container-description">
+            <div class="container-desc-col-4">
+              <a href="https://github.com/Vivianstats" target="_blank">
+                <span><img src="./bootstrap/img/my-github-logo.png"></span>
+              </a>
+            </div>
 
-	    <div class="container-desc-col-4">
-	      <a href="https://twitter.com/vivianstats" target="_blank">
-	      <span><img src="./bootstrap/img/my-twitter-logo.png"></span></a>
-	    </div>
+            <div class="container-desc-col-4">
+              <a href="https://twitter.com/vivianstats" target="_blank">
+                <span><img src="./bootstrap/img/my-twitter-logo.png"></span>
+              </a>
+            </div>
 
-	    <div class="container-desc-col-4">
-	      <a href="https://scholar.google.com/citations?user=HzjANkQAAAAJ" target="_blank">
-	      <span><img src="./bootstrap/img/my-google-scholar-logo.png"></span></a>
-	    </div>
+            <div class="container-desc-col-4">
+              <a href="https://scholar.google.com/citations?user=HzjANkQAAAAJ" target="_blank">
+                <span><img src="./bootstrap/img/my-google-scholar-logo.png"></span>
+              </a>
+            </div>
 
-	    <div class="container-desc-col-4">
-	      <a href="https://www.researchgate.net/profile/Wei_Vivian_Li" target="_blank">
-	      <span><img src="./bootstrap/img/my-research-gate-logo.png"></span></a>
-	    </div>
-          </div>
-	</div>
-      </div>
+            <div class="container-desc-col-4">
+              <a href="https://www.researchgate.net/profile/Wei_Vivian_Li" target="_blank">
+                <span><img src="./bootstrap/img/my-research-gate-logo.png"></span>
+              </a>
+            </div>
+          </div> <!-- container-description -->
+        </div> <!-- container-block -->
+      </div> <!-- container-outside -->
     </script>
 
     <!-- research tab -->
     <script id="research-content" type="text/x-content">
       <div class="container-outside">
 
-	    <div class="container-block">
+	      <div class="container-block">
           <h1>Single-cell Genomics</h1>
           <div class="container-description">
             <span id="research-photo">
@@ -120,7 +140,7 @@
             </span>
             <div id="research-text" class="container-text">
               <div>
-			    <h3>Imputation of scRNA-seq Data</h3>
+                <h3>Imputation of scRNA-seq Data</h3>
 				<p>scImpute is a statistical method to accurately and robustly impute the dropouts in scRNA-seq data. scImpute automatically identifies likely dropouts, and only perform imputation on these values without introducing new biases to the rest data. scImpute is shown to identify likely dropouts, enhance the clustering of cell subpopulations, improve the accuracy of differential expression analysis, and aid the study of gene expression dynamics. [ <a href="https://www.nature.com/articles/s41467-018-03405-7" target="_blank">Link</a> ]</p>
               </div>
             </div> <!-- container-text -->
@@ -131,14 +151,14 @@
             </span>     
             <div id="research-text" class="container-text">
               <div>
-			    <h3>Rational scRNA-seq Experimental Design</h3>
-				<p>We present a flexible and robust simulator, scDesign, the first statistical framework for researchers to quantitatively assess practical scRNA-seq experimental design in the context of differential gene expression analysis. In addition to experimental design, scDesign also assists computational method development by generating high-quality synthetic scRNA-seq datasets under customized experimental settings. [ <a href="https://www.biorxiv.org/content/early/2018/10/07/437095" target="_blank">Link</a> ]</p>
+                <h3>Rational scRNA-seq Experimental Design</h3>
+				  <p>We present a flexible and robust simulator, scDesign, the first statistical framework for researchers to quantitatively assess practical scRNA-seq experimental design in the context of differential gene expression analysis. In addition to experimental design, scDesign also assists computational method development by generating high-quality synthetic scRNA-seq datasets under customized experimental settings. [ <a href="https://www.biorxiv.org/content/early/2018/10/07/437095" target="_blank">Link</a> ]</p>
               </div>        
             </div> <!-- container-text -->
-          </div> <!-- container-description -->          
-		</div> <!-- container-block -->
+          </div> <!-- container-description -->
+        </div> <!-- container-block -->
 
-		<div class="container-block">
+        <div class="container-block">
           <h1>RNA Transcript Assembly and Quantification</h1>
           <div class="container-description">
             <span id="research-photo">
@@ -162,7 +182,7 @@
               </div>	      
             </div> <!-- container-text -->
           </div> <!-- container-description -->
-		</div> <!-- container-block -->
+        </div> <!-- container-block -->
 
         <div class="container-block">
           <h1>Comparative Bioinformatics</h1>
@@ -188,9 +208,9 @@
               </div>	      
             </div> <!-- container-text -->
           </div> <!-- container-description -->
-		</div> <!-- container-block -->
-					
-		<div class="container-block">
+        </div> <!-- container-block -->
+
+        <div class="container-block">
           <h1>Statistical Learning</h1>
           <div class="container-description">
             <span id="research-photo">
@@ -214,15 +234,19 @@
         <div class="container-block">
           <h1>Publication</h1>
           <div class="container-description">
-          	<p><b>Preprint:</b></p>
+            <p>Lab members are in <b>bold</b>.</p>
+
+          	<h3>Preprints:</h3>
             <ul>
+              <li> <b><u>Li, W. V.</u></b> and <b>Li, Y</b>. (2020). scLink: Inferring Sparse Gene Co-expression Networks from Single-cell Expression Data. <b><i>bioRxiv</i></b>.
+                <p>[ <a href="https://www.biorxiv.org/content/10.1101/2020.09.19.304956v1" target="_blank">Link</a> ] [ <a href="https://github.com/Vivianstats/scLink" target="_blank">Software</a> ] [ <a href="https://rutgersbiostat.shinyapps.io/sclink/" target="_blank">Web App</a> ]</p></li>
               <li> Jiang, R., <b>Li, W. V.</b>, and Li, J. J. (2020). mbImpute: an accurate and robust imputation method for microbiome data. <b><i>bioRxiv</i></b>.
                 <p>[ <a href="https://www.biorxiv.org/content/10.1101/2020.03.07.982314v1" target="_blank">Link</a> ]</p></li>
               <li> Roque, W., Cuevas-Mora, K., Sales, D., <b>Li, W. V.</b>, Rosas, I. O., and Romero, F. (2020). Transcriptomics, metabolomics and lipidomics of chronically injured alveolar epithelial cells reveals similar features of IPF lung epithelium. <b><i>bioRxiv</i></b>.
                 <p>[ <a href="https://www.biorxiv.org/content/10.1101/2020.05.08.084459v1" target="_blank">Link</a> ]</p></li>
             </ul>
 
-          	<p><b>Refereed Article:</b></p>
+          	<h3>Refereed Articles:</h3>
             <ul>
               <li> Wang, J., Deng, F., Zeng, F., Shanahan, A. J., <b>Li, W. V.</b>, and Zhang, L. (2020). Predicting long-term multicategory cause of death in patients with prostate cancer: random forest versus multinomial model. <b><i>American Journal of Cancer Research</i></b>, 10(5), 1344.
                 <p>[ <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7269775/" target="_blank">Link</a> ]</p></li>
@@ -244,12 +268,11 @@
 	             <p>[ <a href="https://link.springer.com/article/10.1007/s12561-016-9163-y" target="_blank">Link</a> ] [ <a href="https://cran.r-project.org/web/packages/TROM/index.html" target="_blank">Software</a> ]</p></li>
               <li><b>Li, W. V.</b>, Razaee, Z. S., and Li, J. J. (2016). Epigenome overlap measure (EPOM) for comparing tissue/cell types based on chromatin states. <b><i>BMC Genomics</i></b> 17(Supp 1):10. 
 	             <p>[ <a href="https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-015-2303-9" target="_blank">Link</a> ] [ <a href="https://github.com/ruochenj/EPOM_R" target="_blank">Software</a> ]</p></li>
-	          <p>author* indicates equal contribution</p>
             </ul>
 
-            <p><b>Dissertation:</b></p>
+            <h3>Dissertation:</h3>
             <ul>
-              <li><b>Li, W. V.</b>, (2019). Statistical methods for bulk and single-cell RNA sequencing data. PhD dissertation, <b><i>UCLA</i></b>.
+              <li><b>Li, W. V.</b> (2019). Statistical methods for bulk and single-cell RNA sequencing data. PhD dissertation, <b><i>UCLA</i></b>.
 	            <p>[ <a href="https://escholarship.org/uc/item/50z7659w" target="_blank">Link</a> ]</p></li>	             
             </ul>
           </div>
@@ -266,6 +289,7 @@
               <ul>
 	        <li><p><a href="https://github.com/Vivianstats/scImpute" target="_blank">sclmpute</a>: Accurate and robust imputation of scRNA-seq data</p></li>
 	        <li><p><a href="https://github.com/Vivianstats/scDesign" target="_blank">scDesign</a>: A statistical simulator for rational single-cell experimental design</p></li>
+          <li><p><a href="https://github.com/Vivianstats/scLink" target="_blank">scLink</a>: Inferring sparse gene co-expression networks in single cells</p></li>
               </ul>
             </div>
           </div>
@@ -312,15 +336,15 @@
             </span>
             <div id="about-me-text" class="container-text">
               <div>
-				<p>Vivian is an Assistant Professor in the <a href="https://sph.rutgers.edu/concentrations/biostatistics-epidemiology/index.html" target="_blank">Department of Biostatistics and Epidemiology</a> at the <a href="https://www.rutgers.edu/" target="_blank">Rutgers University</a>, and an associate member of the Rutgers Cancer Institute of New Jersey. She obtained her Ph.D. degree in Statistics from the <a href="http://www.ucla.edu" target="_blank">University of California, Los Angeles</a> (UCLA). She was at the Junction of Statistics and Biology, working with Professor <a href="http://jsb.ucla.edu/about-jingyi-jessica-li" target="_blank">Jingyi Jessica Li</a>. Prior to joining UCLA, Vivian received her B.S. in Statistics from the School of Mathematics and Statistics at <a href="http://english.hust.edu.cn" target="_blank">Huazhong University of Science and Technology</a> (HUST) in 2014.</p>
-				<br>
-				<div style="width:15%;">
+				<p>Vivian (Wei) Li is an Assistant Professor in the <a href="https://sph.rutgers.edu/concentrations/biostatistics-epidemiology/index.html" target="_blank">Department of Biostatistics and Epidemiology</a> at the <a href="https://www.rutgers.edu/" target="_blank">Rutgers University</a>, and an associate member of the Rutgers Cancer Institute of New Jersey. She obtained her Ph.D. degree in Statistics from the <a href="http://www.ucla.edu" target="_blank">University of California, Los Angeles</a> (UCLA). She was at the Junction of Statistics and Biology, working with Professor <a href="http://jsb.ucla.edu/about-jingyi-jessica-li" target="_blank">Jingyi Jessica Li</a>. Prior to joining UCLA, Vivian received her B.S. in Statistics from the School of Mathematics and Statistics at <a href="http://english.hust.edu.cn" target="_blank">Huazhong University of Science and Technology</a> (HUST) in 2014.</p>
+        <p>[ <a href="./bootstrap/doc/CV_VLi_202009.pdf" target="_blank">Vivian's CV</a> ]</p>				
+        <br>
+        <div style="width:15%;">
 				  <p>Address:</p>
-				  <br>
 				  <p>Email:</p>
 				</div>
-				<div style="width:75%;">
-				  <p>School of Public Health, Room 210, <br>Rutgers, The State University of New Jersey.</p>
+				<div style="width:80%;">
+				  <p>School of Public Health, Room 210, Rutgers University.</p>
 				  <p>vivian.li@rutgers.edu</p>
 				</div>
               </div> <!-- container-text -->
@@ -328,10 +352,10 @@
           </div> <!-- container-description -->
         </div> <!-- container-block -->		
 
-		<div class="container-block">
+        <div class="container-block">
           <h1>Research Interests</h1>
           <div class="container-description">
-          	<p>Our lab is broadly interested in statistical modeling and algorithm development, as well as their applications to high-throughput sequencing data in bioinformatic and clinical research. Major research topics of our lab include:</p>
+          	<p>Our lab is interested in statistical modeling and algorithm development, as well as their applications to high-throughput sequencing data in bioinformatics and clinical research. Major research topics of our lab include:</p>
           	<ul>
           	  <li>Statistical modeling and experimental design of</li>
           	  <ul>
@@ -343,33 +367,66 @@
           	  <li>Gene regulatory networks</li> 
           	  <li>Comparative bioinformatics</li> 
           	</ul>
-            <p><b>We are looking for new group members with passion and talent!</b> Please contact the PI (vivian.li@rutgers.edu) if you are interested in biological discoveries and have a background in statistics, biostatistics, bioinformatics, mathematics, or other related fields.</p>
-		  </div> <!-- container-description -->
+          </div> <!-- container-description -->
         </div> <!-- container-block -->
 
+        <div class="container-block">
+          <h1>Research Team</h1>
+          <div class="container-description">
+            
+            <p><b>We are looking for new team members with passion and talent!</b></p> 
+            <p>Please contact Dr. Vivian Li if you are interested in biological discoveries and have a background in statistics, biostatistics, bioinformatics, mathematics, or other related fields.</p>
+
+            <h3>Current Members</h3>
+            <div class="research-team-name">
+              <p>Shiwei Fu</p>
+              <p>Dayuan Wang</p>
+              <p>Andrew Cheng</p>
+            </div>
+            <div class="research-team-desc">
+              <p>MS student in Statistics at UIUC</p>
+              <p>MS student in Biostatistics at Rutgers</p>
+              <p>Undergraduate student in Computer Science at Rutgers</p>
+            </div>
+
+            <h3>Alumni</h3>
+            <div class="research-team-name">
+              <p>Yanzeng Li</p>
+              <br>
+            </div>
+            <div class="research-team-desc">
+              <p>Former MS student in Biostatistics at Rutgers; Currently PhD student at Michigan State University (12/2019 – 09/2020)</p>
+            </div>
+
+          </div> 
+        </div>
+
+      </div> <!-- container-outside -->
+    </script>
+
+        <!--
         <div class="container-block">
           <h1>Honors and Awards</h1>
           <div class="container-description">
             <ul>
-			  <li><b>Caliburn Allocation Award of Research Computing</b>, Rutgers University, 2020</li>
-			  <li><b>The Most Outstanding Statistician Award</b>, UCLA, 2019</li>
-			  <li><b>Dissertation Year Fellowship</b> ($20,000), UCLA, 2018</li>
-			  <li><b>Pearl Cohen Poster Award</b>, UCLA Biomedical & Life Science Innovation Day, 2018</li>
-			  <li><b>Diversity Scholarship</b> ($500), UseR 2016 Conference, 2016</li>
-			  <li><b>Doctoral Student Travel Grant</b> ($500), UCLA, 2016</li>
-			  <li><b>The Most Promising Computational Statistician Award</b>, UCLA, 2015</li>
-			  <li><b>Distinguished Graduate of Class 2014</b>, HUST, 2014</li>
-			  <li><b>National Fellowship</b> (&yen;8,000), Ministry of Education ,China, 2013</li>
-			  <li><b>Student Award of Excellence</b> (awarded to 20 students per year), HUST, 2013</li>
-			  <li><b>National Fellowship</b> (&yen;8,000), Ministry of Education ,China, 2012</li>
-			  <li><b>National Fellowship</b> (&yen;8,000), Ministry of Education ,China, 2011</li>
-			  <li><b>Outstanding Student Award</b> (awarded to 3 students in each department), HUST, 2011</li>
+        <li><b>Caliburn Allocation Award of Research Computing</b>, Rutgers University, 2020</li>
+        <li><b>The Most Outstanding Statistician Award</b>, UCLA, 2019</li>
+        <li><b>Dissertation Year Fellowship</b> ($20,000), UCLA, 2018</li>
+        <li><b>Pearl Cohen Poster Award</b>, UCLA Biomedical & Life Science Innovation Day, 2018</li>
+        <li><b>Diversity Scholarship</b> ($500), UseR 2016 Conference, 2016</li>
+        <li><b>Doctoral Student Travel Grant</b> ($500), UCLA, 2016</li>
+        <li><b>The Most Promising Computational Statistician Award</b>, UCLA, 2015</li>
+        <li><b>Distinguished Graduate of Class 2014</b>, HUST, 2014</li>
+        <li><b>National Fellowship</b> (&yen;8,000), Ministry of Education ,China, 2013</li>
+        <li><b>Student Award of Excellence</b> (awarded to 20 students per year), HUST, 2013</li>
+        <li><b>National Fellowship</b> (&yen;8,000), Ministry of Education ,China, 2012</li>
+        <li><b>National Fellowship</b> (&yen;8,000), Ministry of Education ,China, 2011</li>
+        <li><b>Outstanding Student Award</b> (awarded to 3 students in each department), HUST, 2011</li>
             </ul>
-		  </div> <!-- container-description -->
-        </div> <!-- container-block -->
+          </div> 
+        </div>  -->
 
-      </div> <!-- container-outside -->
-    </script>
+
     <!-- contact tab -->
     <script id="contact-content" type="text/x-content">
       <div class="container-outside">
@@ -390,7 +447,7 @@
           <div class="container-description">
 
             <div>
-              <h3>Student Instructor</h3>
+              <h3>Graduate Student Instructor</h3>
               <ul>
 	            <li>Fall 2018, STATS 495A: Teaching College Statistics</li>
               </ul>
@@ -398,31 +455,20 @@
             <div>
               <h3>Teaching Assistant</h3>
               <ul>
-			    <li>Summer 2016, STATS 101A: Introduction to Data Analysis and Regression</li>
-				<li>Winter 2016, STATS 13: Introduction to Statistical Methods for the Health and Life Sciences</li>
-				<li>Fall 2015, STATS 10: Introduction to Statistical Reasoning</li>
-				<li>Summer 2015, STATS 100B: Introduction to Mathematical Statistics</li>
-              </ul>
-            </div>		  
-            <div>
-              <h3>Special Reader</h3>
-              <ul>
-			    <li>Spring 2018, STATS 207: Statistical Learning with Sparsity</li>
-				<li>Winter 2017, STATS 203: Large Sample Theory, Including Resampling</li>
-				<li>Winter 2017, STATS 205: Hierarchical Linear Models</li>
-				<li>Spring 2016, STATS M254: Statistical Methods in Computational Biology</li>
-				<li>Spring 2016, STATS 200C: Large Sample Theory</li>
-              </ul>
-            </div>
-            <div>
-              <h3>Reader</h3>
-              <ul>
-			    <li>Spring 2015, STATS 100A: Introduction to Probability</li>
+                <li>Spring 2018, STATS 207: Statistical Learning with Sparsity</li>
+                <li>Winter 2017, STATS 205: Hierarchical Linear Models</li>
+                <li>Winter 2017, STATS 203: Large Sample Theory, Including Resampling</li>
+                <li>Summer 2016, STATS 101A: Introduction to Data Analysis and Regression</li>
+                <li>Spring 2016, STATS M254: Statistical Methods in Computational Biology</li>
+                <li>Spring 2016, STATS 200C: Large Sample Theory</li>
+                <li>Winter 2016, STATS 13: Introduction to Statistical Methods for the Health and Life Sciences</li>
+                <li>Fall 2015, STATS 10: Introduction to Statistical Reasoning</li>
+                <li>Summer 2015, STATS 100B: Introduction to Mathematical Statistics</li>
+                <li>Spring 2015, STATS 100A: Introduction to Probability</li>
                 <li>Winter 2015, STATS 10: Introduction to Statistical Reasoning</li>
                 <li>Fall 2014, STATS 100A: Introduction to Probability</li>
               </ul>
-            </div>
-			
+            </div>			
           </div>
         </div>
       </div>
@@ -437,14 +483,16 @@
     <script type="text/javascript">
       var gallery_photo_titles = new Array(
         "Welcome to Vivian Li Lab",
-        "The Rutgers clock",
-        "Life is beautiful at UCLA",
-		"Forest-like campus of HUST");
+        "The Rutgers Clock",
+        "Rutgers School of Public House",
+        "UCLA Kerckhoff Hall",
+        "Forest-like Campus of HUST");
       var gallery_photo_descriptions = new Array(
         "A collection of my research and teaching activities",
         "Starting a new chapter in my life",
+        "Hornered to be an assistant professor at SPH",
         "My office window view at the Department of Statistics",
-		"Rewarding experience as an undergraduate here");
+        "Rewarding experience as an undergraduate here");
       /* set up a timer to change gallery photo in time */
       var timer = window.setInterval("changePhotoRight()", 8000);
     </script>
