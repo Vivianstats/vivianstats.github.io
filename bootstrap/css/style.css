@@ -22,6 +22,10 @@ body {
     background:#AC3B61;
 }
 
+uu {
+    border-bottom:2px solid black; /* thicker underline */
+}
+
 #top-banner {
 	background:-moz-linear-gradient(top, #501B1D 0%, #AC3B61 100%);
     background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #501B1D), color-stop(100%, #AC3B61));
