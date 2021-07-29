@@ -164,6 +164,18 @@ uu {
     height:30px;
 }
 
+.container-desc-col-1 {
+    display:inline-block;
+    width:96%;
+    text-align:center;
+}
+
+.container-desc-col-2 {
+    display:inline-block;
+    width:48%;
+    text-align:center;
+}
+
 .container-desc-col-3 {
     display:inline-block;
     width:32%;
@@ -495,6 +507,10 @@ uu {
     -moz-transition:box-shadow .5s;
     -o-transition:box-shadow .5s;
     transition:box-shadow .5s;
+}
+
+#fund-agency img {
+    width:100%;
 }
 
 .research-team-name {
