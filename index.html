@@ -33,10 +33,11 @@
         </div>
         <div id="access">
           <ul id="nav">
-            <li><a id="link-contact" href="#contact" onclick="changeNavState(id)">TEACHING</a></li>
-            <li><a id="link-projects" href="#projects" onclick="changeNavState(id)">PUBLICATION</a></li>
+            <li><a id="link-teaching" href="#teaching" onclick="changeNavState(id)">TEACHING</a></li>
+            <li><a id="link-publication" href="#publication" onclick="changeNavState(id)">PUBLICATION</a></li>
             <li><a id="link-research" href="#research" onclick="changeNavState(id)">RESEARCH</a></li>
-            <li><a id="link-about" href="#about" onclick="changeNavState(id)">ABOUT</a></li>
+            <li><a id="link-team" href="#team" onclick="changeNavState(id)">TEAM</a></li>
+            <li><a id="link-pi" href="#pi" onclick="changeNavState(id)">PI</a></li>
             <li><a id="link-home" href="#home" onclick="changeNavState(id)">HOME</a></li>
           </ul>
         </div>
@@ -140,50 +141,46 @@
 
 	      <div class="container-block">
           <h1>Single-cell Genomics</h1>
+
           <div class="container-description">
             <span id="research-photo">
               <img src="./bootstrap/img/research-maaper.png">
             </span>
-            <div id="research-text" class="container-text">
-              <div>
-                <h3>Analyzing Alternative Polyadenylation (APA)</h3>
-                <p>MAAPER is a computational method for examining APA using 3' end-linked reads. MAAPER uses a probabilistic model to predict PASs for 3' end-linked  reads with high accuracy and sensitivity, and examines different types of APA events, including those in 3'UTRs and introns, with robust statistics. We show MAAPER's accuracy with data from both bulk and single cell RNA samples and its applicability in unpaired or paired experimental designs. [ <a href="https://www.biorxiv.org/content/10.1101/2021.03.21.436343v1" target="_blank">Preprint</a> ]</p>
-              </div>
+            <div class="container-text research-text">
+              <h3>Analyzing Alternative Polyadenylation (APA)</h3>
+              <p>MAAPER is a computational method for examining APA using 3' end-linked reads. MAAPER uses a probabilistic model to predict PASs for 3' end-linked  reads with high accuracy and sensitivity, and examines different types of APA events, including those in 3'UTRs and introns, with robust statistics. We show MAAPER's accuracy with data from both bulk and single cell RNA samples and its applicability in unpaired or paired experimental designs. [ <a href="https://www.biorxiv.org/content/10.1101/2021.03.21.436343v1" target="_blank">Preprint</a> ]</p>
             </div> <!-- container-text -->
           </div> <!-- container-description -->
+
           <div class="container-description">
-            <span id="research-photo">
+            <span class="research-photo">
               <img src="./bootstrap/img/research-sclink.png">
             </span>
-            <div id="research-text" class="container-text">
-              <div>
-                <h3>Constructing Gene Co-expression Networks</h3>
-                <p>A system-level understanding of the regulation and coordination mechanisms of gene expression is essential to studying the complexity of biological processes in health and disease. Therefore, we propose the scLink method, which uses statistical network modeling to understand the co-expression relationships among genes and construct sparse gene co-expression networks from single-cell gene expression data. [ <a href="https://doi.org/10.1016/j.gpb.2020.11.006" target="_blank">Paper</a> ]</p>
-              </div>
+            <div class="container-text research-text">
+              <h3>Constructing Gene Co-expression Networks</h3>
+              <p>A system-level understanding of the regulation and coordination mechanisms of gene expression is essential to studying the complexity of biological processes in health and disease. Therefore, we propose the scLink method, which uses statistical network modeling to understand the co-expression relationships among genes and construct sparse gene co-expression networks from single-cell gene expression data. [ <a href="https://doi.org/10.1016/j.gpb.2020.11.006" target="_blank">Paper</a> ]</p>
             </div> <!-- container-text -->
           </div> <!-- container-description -->
+
           <div class="container-description">
-            <span id="research-photo">
+            <span class="research-photo">
               <img src="./bootstrap/img/research-scimpute.png">
             </span>
-            <div id="research-text" class="container-text">
-              <div>
-                <h3>Imputation of scRNA-seq Data</h3>
-                <p>scImpute is a statistical method to accurately and robustly impute the dropouts in scRNA-seq data. scImpute automatically identifies likely dropouts, and only perform imputation on these values without introducing new biases to the rest data. scImpute is shown to identify likely dropouts, enhance the clustering of cell subpopulations, improve the accuracy of differential expression analysis, and aid the study of gene expression dynamics. [ <a href="https://www.nature.com/articles/s41467-018-03405-7" target="_blank">Paper</a> ]</p>
-              </div>
+            <div class="container-text research-text">
+              <h3>Imputation of scRNA-seq Data</h3>
+              <p>scImpute is a statistical method to accurately and robustly impute the dropouts in scRNA-seq data. scImpute automatically identifies likely dropouts, and only perform imputation on these values without introducing new biases to the rest data. scImpute is shown to identify likely dropouts, enhance the clustering of cell subpopulations, improve the accuracy of differential expression analysis, and aid the study of gene expression dynamics. [ <a href="https://www.nature.com/articles/s41467-018-03405-7" target="_blank">Paper</a> ]</p>
             </div> <!-- container-text -->
           </div> <!-- container-description -->
+
           <div class="container-description">
-            <span id="research-photo">
+            <span class="research-photo">
               <img src="./bootstrap/img/research-scdesign.png">
             </span>     
-            <div id="research-text" class="container-text">
-              <div>
-                <h3>Rational scRNA-seq Experimental Design</h3>
-				  <p>We present a flexible and robust simulator, scDesign, the first statistical framework for researchers to quantitatively assess practical scRNA-seq experimental design in the context of differential gene expression analysis. In addition to experimental design, scDesign also assists computational method development by generating high-quality synthetic scRNA-seq datasets under customized experimental settings. 
-				  <p>[ <a href="https://doi.org/10.1093/bioinformatics/btz321" target="_blank">scDesign</a> ] [ <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02367-2" target="_blank">scDesign2</a> ]</p>
-				  </p>
-              </div>        
+            <div class="container-text research-text">
+              <h3>Rational scRNA-seq Experimental Design</h3>
+              <p>We present a flexible and robust simulator, scDesign, the first statistical framework for researchers to quantitatively assess practical scRNA-seq experimental design in the context of differential gene expression analysis. In addition to experimental design, scDesign also assists computational method development by generating high-quality synthetic scRNA-seq datasets under customized experimental settings. 
+                <p>[ <a href="https://doi.org/10.1093/bioinformatics/btz321" target="_blank">scDesign</a> ] [ <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02367-2" target="_blank">scDesign2</a> ]</p>
+              </p>     
             </div> <!-- container-text -->
           </div> <!-- container-description -->
         </div> <!-- container-block -->
@@ -191,25 +188,21 @@
         <div class="container-block">
           <h1>RNA Transcript Assembly and Quantification</h1>
           <div class="container-description">
-            <span id="research-photo">
+            <span class="research-photo">
               <img src="./bootstrap/img/research-aide.png">
             </span>	    
-            <div id="research-text" class="container-text">
-              <div>
-			    <h3>Annotation-assisted Transcript Reconstruction</h3>
-				<p>AIDE is a statistical method which identifies full-length mRNA isoforms from a novel perspective: using the likelihood ratio test to find novel isoforms in a stepwise manner given annotated isoforms, by prioritizing and selectively borrowing information from the annotated isoforms. AIDE is the first approach that directly controls false isoform discoveries by implementing the statistical model selection principle. [ <a href="https://genome.cshlp.org/content/29/12/2056" target="_blank">Paper</a> ]</p>
-              </div>	      
+            <div class="container-text research-text">
+              <h3>Annotation-assisted Transcript Reconstruction</h3>
+              <p>AIDE is a statistical method which identifies full-length mRNA isoforms from a novel perspective: using the likelihood ratio test to find novel isoforms in a stepwise manner given annotated isoforms, by prioritizing and selectively borrowing information from the annotated isoforms. AIDE is the first approach that directly controls false isoform discoveries by implementing the statistical model selection principle. [ <a href="https://genome.cshlp.org/content/29/12/2056" target="_blank">Paper</a> ]</p>      
             </div> <!-- container-text -->
           </div> <!-- container-description -->
           <div class="container-description">
-            <span id="research-photo">
+            <span class="research-photo">
               <img src="./bootstrap/img/research-msiq.png">
             </span>	    
-            <div id="research-text" class="container-text">
-              <div>
-			    <h3>Transcript Quantification of Multiple RNA-seq Samples</h3>
-				<p>We develop a method, which we call "joint modeling of multiple RNA-seq samples for accurate isoform quantification" (MSIQ), for more robust isoform quantification by integrating multiple RNA-seq samples under a Bayesian framework. Our method aims to (1) identify a consistent group of samples with homogeneous quality and (2) improve isoform quantification accuracy by jointly modeling multiple RNA-seq samples and allowing for higher weights on the consistent group. [ <a href="https://projecteuclid.org/euclid.aoas/1520564482" target="_blank">Paper</a> ]</p>
-              </div>	      
+            <div class="container-text research-text">
+              <h3>Transcript Quantification of Multiple RNA-seq Samples</h3>
+              <p>We develop a method, which we call "joint modeling of multiple RNA-seq samples for accurate isoform quantification" (MSIQ), for more robust isoform quantification by integrating multiple RNA-seq samples under a Bayesian framework. Our method aims to (1) identify a consistent group of samples with homogeneous quality and (2) improve isoform quantification accuracy by jointly modeling multiple RNA-seq samples and allowing for higher weights on the consistent group. [ <a href="https://projecteuclid.org/euclid.aoas/1520564482" target="_blank">Paper</a> ]</p>	      
             </div> <!-- container-text -->
           </div> <!-- container-description -->
         </div> <!-- container-block -->
@@ -217,40 +210,36 @@
         <div class="container-block">
           <h1>Comparative Bioinformatics</h1>
           <div class="container-description">
-            <span id="research-photo">
+            <span class="research-photo">
               <img src="./bootstrap/img/research-trom.png">
             </span>	    
-            <div id="research-text" class="container-text">
-              <div>
-			    <h3>Transcriptome Overlap Measure</h3>
-				<p>TROM is a testing-based method for comparing transcriptomes within or between different species, and provide a different perspective about capturing transcriptomic similarity. The TROM method focuses on identifying associated genes that capture molecular characteristics of biological samples, and subsequently comparing the biological samples by testing the overlap of their associated genes. [ <a href="https://link.springer.com/article/10.1007/s12561-016-9163-y" target="_blank">Paper</a> ]</p>
-              </div>	      
+            <div class="container-text research-text">
+              <h3>Transcriptome Overlap Measure</h3>
+              <p>TROM is a testing-based method for comparing transcriptomes within or between different species, and provide a different perspective about capturing transcriptomic similarity. The TROM method focuses on identifying associated genes that capture molecular characteristics of biological samples, and subsequently comparing the biological samples by testing the overlap of their associated genes. [ <a href="https://link.springer.com/article/10.1007/s12561-016-9163-y" target="_blank">Paper</a> ]</p>	      
             </div> <!-- container-text -->
           </div> <!-- container-description -->
+
           <div class="container-description">
-            <span id="research-photo">
+            <span class="research-photo">
               <img src="./bootstrap/img/research-epom.png">
             </span>	    
-            <div id="research-text" class="container-text">
-              <div>
-			    <h3>Epigenome Overlap Measure</h3>
-				<p>We study the relationships among tissue and cell types from a new perspective: the similarity of tissue and cell types in terms of histone modification marks evaluated in relevant chromatin states. The proposed EPOM measure is capable of finding a clear correspondence map of biological samples from different tissue and cell types. The identified associated enhancers and promoters provide a comprehensive catalog to study distinct biological processes and disease variants in different tissue and cell types. [ <a href="https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-015-2303-9" target="_blank">Paper</a> ]</p>
-              </div>	      
+            <div class="container-text research-text">
+              <h3>Epigenome Overlap Measure</h3>
+              <p>We study the relationships among tissue and cell types from a new perspective: the similarity of tissue and cell types in terms of histone modification marks evaluated in relevant chromatin states. The proposed EPOM measure is capable of finding a clear correspondence map of biological samples from different tissue and cell types. The identified associated enhancers and promoters provide a comprehensive catalog to study distinct biological processes and disease variants in different tissue and cell types. [ <a href="https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-015-2303-9" target="_blank">Paper</a> ]</p>      
             </div> <!-- container-text -->
           </div> <!-- container-description -->
+
         </div> <!-- container-block -->
 
         <div class="container-block">
           <h1>Statistical Learning</h1>
           <div class="container-description">
-            <span id="research-photo">
+            <span class="research-photo">
               <img src="./bootstrap/img/research-npcs.png">
             </span>
-            <div id="research-text" class="container-text">
-              <div>
-                <h3>Asymmetric Classification</h3>
-                <p>We propose an umbrella algorithm to estimate the population type I error control achieved by multiple cost-sensitive learning approaches.  Our algorithm for the first time establishes a connection between cost-sensitive learning and the Neyman-Pearson classification paradigm, which minimizes the population type II error while enforcing an upper bound on the population type I error. This algorithm can be applied in many real problems, such as disease diagnosis. [ <a href="https://arxiv.org/abs/2012.14951" target="_blank">Paper</a> ]</p>
-              </div>        
+            <div class="container-text research-text">
+              <h3>Asymmetric Classification</h3>
+              <p>We propose an umbrella algorithm to estimate the population type I error control achieved by multiple cost-sensitive learning approaches.  Our algorithm for the first time establishes a connection between cost-sensitive learning and the Neyman-Pearson classification paradigm, which minimizes the population type II error while enforcing an upper bound on the population type I error. This algorithm can be applied in many real problems, such as disease diagnosis. [ <a href="https://arxiv.org/abs/2012.14951" target="_blank">Paper</a> ]</p>      
             </div> <!-- container-text -->
           </div> <!-- container-description -->
         </div> <!-- container-block -->
@@ -258,12 +247,13 @@
       </div> <!-- container-outside -->
     </script>
 
-    <!-- projects tab -->
-    <script id="projects-content" type="text/x-content">
+    <!-- publication tab -->
+    <script id="publication-content" type="text/x-content">
       <div class="container-outside">
         <div class="container-block">
           <h1>Publication</h1>
           <div class="container-description">
+
             <p>Lab members are in <b>bold</b>.</p>
             <p>Corresponding authors are <uu>underlined</uu>.</p>
 
@@ -318,8 +308,8 @@
               <li><b>Li, WV</b> (2019). Statistical methods for bulk and single-cell RNA sequencing data. PhD dissertation, <b><i>UCLA</i></b>.
 	            <p>[ <a href="https://escholarship.org/uc/item/50z7659w" target="_blank">Link</a> ]</p></li>	             
             </ul>
-          </div>
-        </div>
+          </div> <!-- container-description -->
+        </div> <!-- container-block -->
 
         <div class="container-block">
           <h1>Software</h1>
@@ -330,27 +320,27 @@
             <div>
               <h3>Single-cell Transcriptomics</h3>
               <ul>
-	        <li><p><a href="https://github.com/Vivianstats/scImpute" target="_blank">sclmpute</a>: Accurate and robust imputation of scRNA-seq data</p></li>
-	        <li><p><a href="https://github.com/Vivianstats/scDesign" target="_blank">scDesign</a>: A statistical simulator for rational single-cell experimental design</p></li>
-          <li><p><a href="https://github.com/Vivianstats/scLink" target="_blank">scLink</a>: Inferring sparse gene co-expression networks in single cells</p></li>
-          <li><p><a href="https://github.com/Vivianstats/MAAPER" target="_blank">MAAPER</a>: Analyzing alternative polyadenylation using 3' end-linked reads</p></li>
+      	        <li><p><a href="https://github.com/Vivianstats/scImpute" target="_blank">sclmpute</a>: Accurate and robust imputation of scRNA-seq data</p></li>
+      	        <li><p><a href="https://github.com/Vivianstats/scDesign" target="_blank">scDesign</a>: A statistical simulator for rational single-cell experimental design</p></li>
+                <li><p><a href="https://github.com/Vivianstats/scLink" target="_blank">scLink</a>: Inferring sparse gene co-expression networks in single cells</p></li>
+                <li><p><a href="https://github.com/Vivianstats/MAAPER" target="_blank">MAAPER</a>: Analyzing alternative polyadenylation using 3' end-linked reads</p></li>
               </ul>
             </div>
-          </div>
+          </div> <!-- container-description-reverse -->
 
           <div class="container-description-reverse">
             <span>
               <img src="./bootstrap/img/github-logo.png">
             </span>
             <div>
-	      <h3>Bulk Tissue Transcriptomics</h3>
-	      <ul>
-	        <li><p><a href="https://github.com/Vivianstats/AIDE" target="_blank">AIDE</a>: Annotation-assisted transcript reconstruction and quantification</p></li>
-          <li><p><a href="https://github.com/Vivianstats/MSIQ" target="_blank">MSIQ</a>: Quantification of RNA transcripts from multiple RNA-seq samples</p></li>
-          <li><p><a href="https://github.com/Vivianstats/MAAPER" target="_blank">MAAPER</a>: Analyzing alternative polyadenylation using 3' end-linked reads</p></li>          
-	      </ul>
+      	      <h3>Bulk Tissue Transcriptomics</h3>
+      	      <ul>
+      	        <li><p><a href="https://github.com/Vivianstats/AIDE" target="_blank">AIDE</a>: Annotation-assisted transcript reconstruction and quantification</p></li>
+                <li><p><a href="https://github.com/Vivianstats/MSIQ" target="_blank">MSIQ</a>: Quantification of RNA transcripts from multiple RNA-seq samples</p></li>
+                <li><p><a href="https://github.com/Vivianstats/MAAPER" target="_blank">MAAPER</a>: Analyzing alternative polyadenylation using 3' end-linked reads</p></li>          
+      	      </ul>
             </div>
-          </div>
+          </div> <!-- container-description-reverse -->
 
           <div class="container-description-reverse">
             <span>
@@ -363,37 +353,36 @@
                 <li><p><a href="https://github.com/ruochenj/EPOM_R" target="_blank">EPOM</a>: Comparing epigenomes of biological samples</p></li>
               </ul>
             </div>
-          </div>
-	  <!-- only to add a little space at bottom -->
-	  <div style="height:40px;"></div> 
-        </div>
-      </div>
+          </div> <!-- container-description-reverse -->
+
+          <!-- only to add a little space at bottom -->
+          <div style="height:40px;"></div> 
+
+        </div> <!-- container-block -->
+      </div>  <!-- container-outside -->
     </script>
 
-    <!-- about tab -->
-    <script id="about-content" type="text/x-content">
+    <!-- PI tab -->
+    <script id="pi-content" type="text/x-content">
       <div class="container-outside">
         <div class="container-block">
           <h1>About PI</h1>
           <div class="container-description">
-            <span id="about-me-photo">
+            <span class="about-me-photo">
               <img src="./bootstrap/img/about-me.png">
             </span>
-            <div id="about-me-text" class="container-text">
-              <div>
-				<p>Vivian (Wei) Li is an Assistant Professor in the <a href="https://sph.rutgers.edu/concentrations/biostatistics-epidemiology/index.html" target="_blank">Department of Biostatistics and Epidemiology</a> at the <a href="https://www.rutgers.edu/" target="_blank">Rutgers University</a>. She is also a faculty member in <a href="https://molbiosci.rutgers.edu/current-students/phd-programs" target="_blank">Rutgers Graduate Programs in Molecular Biosciences</a> and <a href="https://iqb.rutgers.edu/" target="_blank">Graduate Programs in Quantitative Biomedicine</a>. Vivian obtained her Ph.D. degree in Statistics from the University of California, Los Angeles, where she was working with Dr. Jingyi Jessica Li. Prior to joining UCLA, Vivian received her B.S. in Statistics from the School of Mathematics and Statistics at Huazhong University of Science and Technology.
-        [ <a href="./bootstrap/doc/CV_VLi_202108.pdf" target="_blank">Vivian's CV</a> ]</p>				
-        <br>
-        <div style="width:15%;">
-				  <p>Address:</p>
-				  <p>Email:</p>
-				</div>
-				<div style="width:80%;">
-				  <p>School of Public Health, Room 210, Rutgers University.</p>
-				  <p>vivian.li@rutgers.edu</p>
-				</div>
-              </div> <!-- container-text -->
-            </div> <!-- container-description -->
+            <div class="container-text about-me-text">
+              <p>Vivian (Wei) Li is an Assistant Professor in the <a href="https://sph.rutgers.edu/concentrations/biostatistics-epidemiology/index.html" target="_blank">Department of Biostatistics and Epidemiology</a> at the <a href="https://www.rutgers.edu/" target="_blank">Rutgers University</a>. She is also a faculty member in <a href="https://molbiosci.rutgers.edu/current-students/phd-programs" target="_blank">Rutgers Graduate Programs in Molecular Biosciences</a> and <a href="https://iqb.rutgers.edu/" target="_blank">Graduate Programs in Quantitative Biomedicine</a>. Vivian obtained her Ph.D. degree in Statistics from the University of California, Los Angeles, where she was working with Dr. Jingyi Jessica Li. Prior to joining UCLA, Vivian received her B.S. in Statistics from the School of Mathematics and Statistics at Huazhong University of Science and Technology. [ <a href="./bootstrap/doc/CV_VLi_202108.pdf" target="_blank">Vivian's CV</a> ]</p>	
+              <br>
+              <div style="width:15%;">
+                <p>Address:</p>
+                <p>Email:</p>
+              </div>
+              <div style="width:80%;">
+                <p>School of Public Health, Room 210, Rutgers University.</p>
+                <p>vivian.li@rutgers.edu</p>
+              </div>
+            </div> <!-- container-text -->
           </div> <!-- container-description -->
         </div> <!-- container-block -->		
 
@@ -415,45 +404,6 @@
           </div> <!-- container-description -->
         </div> <!-- container-block -->
 
-        <div class="container-block">
-          <h1>Research Team</h1>
-          <div class="container-description">
-            
-            <p><b>We are looking for new team members with passion and talent!</b></p> 
-            <p>We are hiring at all levels, including graduate student/research assistant/postdoc. Please contact Dr. Vivian Li if you are interested in using statistical/computational methods to answer biological questions and have a background in statistics, biostatistics, bioinformatics, computer science, or other related fields.</p>
-
-            <h3>Current Members</h3>
-            <div class="research-team-name">
-              <p>Shiwei Fu</p>
-              <p>Jiayi Liu</p>
-              <p>Jie Sheng</p>
-              <p>Andrew Cheng</p>              
-            </div>
-            <div class="research-team-desc">
-              <p>PhD student in Biostatistics at Rutgers</p>
-              <p>PhD student in Molecular Biosciences at Rutgers</p>
-              <p>MS student in Data Science at UW-Madison</p>
-              <p>Undergraduate student in Computer Science at Rutgers</p>
-            </div>
-
-            <h3>Alumni</h3>
-            <div class="research-team-name">
-              <p>Dayuan Wang</p>
-              <br>
-            </div>
-            <div class="research-team-desc">
-              <p>(08/2020 – 12/2020) MS student in Biostatistics at Rutgers <br>Now PhD student at University of South Carolina</p>
-            </div>
-            <div class="research-team-name">
-              <p>Yanzeng Li</p>
-              <br>
-            </div>
-            <div class="research-team-desc">
-              <p>(12/2019 – 09/2020) MS student in Biostatistics at Rutgers <br>Now PhD student at Michigan State University</p>
-            </div>
-
-          </div> 
-        </div> <!-- container-block -->
 
         <div id="fund-agency" class="container-block">
           <h1>Funding Agencies</h1>
@@ -467,31 +417,100 @@
       </div> <!-- container-outside -->
     </script>
 
-        <!--
+    <!-- team tab -->
+    <script id="team-content" type="text/x-content">
+      <div class="container-outside">
+
         <div class="container-block">
-          <h1>Honors and Awards</h1>
+          <h1>Current Members</h1>
           <div class="container-description">
-            <ul>
-        <li><b>Caliburn Allocation Award of Research Computing</b>, Rutgers University, 2020</li>
-        <li><b>The Most Outstanding Statistician Award</b>, UCLA, 2019</li>
-        <li><b>Dissertation Year Fellowship</b> ($20,000), UCLA, 2018</li>
-        <li><b>Pearl Cohen Poster Award</b>, UCLA Biomedical & Life Science Innovation Day, 2018</li>
-        <li><b>Diversity Scholarship</b> ($500), UseR 2016 Conference, 2016</li>
-        <li><b>Doctoral Student Travel Grant</b> ($500), UCLA, 2016</li>
-        <li><b>The Most Promising Computational Statistician Award</b>, UCLA, 2015</li>
-        <li><b>Distinguished Graduate of Class 2014</b>, HUST, 2014</li>
-        <li><b>National Fellowship</b> (&yen;8,000), Ministry of Education ,China, 2013</li>
-        <li><b>Student Award of Excellence</b> (awarded to 20 students per year), HUST, 2013</li>
-        <li><b>National Fellowship</b> (&yen;8,000), Ministry of Education ,China, 2012</li>
-        <li><b>National Fellowship</b> (&yen;8,000), Ministry of Education ,China, 2011</li>
-        <li><b>Outstanding Student Award</b> (awarded to 3 students in each department), HUST, 2011</li>
-            </ul>
-          </div> 
-        </div>  -->
+            <p><b>We are looking for new team members with passion and talent!</b></p> 
+            <p>We are hiring at all levels, including graduate student/research assistant/postdoc. Please contact Dr. Vivian Li if you are interested in using statistical/computational methods to answer biological questions and have a background in statistics, biostatistics, bioinformatics, computer science, or other related fields.</p>
+          </div>
+
+          <div class="container-description">
+            <span class="team-member-photo">
+              <img src="./bootstrap/img/team-fushiwei.png">
+            </span>
+            <div class="container-text team-member-text">
+              <p><b>Shiwei Fu</b></p> 
+              <p>PhD Student</p>
+              <p>Shiwei is a PhD student in the Biostatistics concentration, Rutgers School of Public Health. Before joining Rutgers, he completed a MS degree in Statistics at University of Illinois at Urbana-Champaign. Shiwei is interested in single-cell RNA-seq analysis and other emerging transcriptomic sequencing technologies.</p>
+            </div> <!-- container-text -->
+          </div> <!-- container-description -->
+
+          <div class="container-description">
+            <span class="team-member-photo">
+              <img src="./bootstrap/img/team-liujiayi.png">
+            </span>
+            <div class="container-text team-member-text">
+              <p><b>Jiayi Liu</b></p> 
+              <p>PhD Student</p>
+              <p>Jiayi is a PhD student in Molecular Biosciences at Rutgers University. She is interested in computational biology and translational research.</p>
+            </div> <!-- container-text -->
+          </div> <!-- container-description -->
+
+          <div class="container-description">
+            <span class="team-member-photo">
+              <img src="./bootstrap/img/team-wangzhihan.png">
+            </span>
+            <div class="container-text team-member-text">
+              <p><b>Zhihan Wang</b></p> 
+              <p>MS Student</p>
+              <p>Zhihan completed her BS degree in Plant Science at Nanjing Agriculture University and is currently an MS student in Statistics at Rutgers University. She is equipped with knowledge and skills in both biology and statistics.</p>
+            </div> <!-- container-text -->
+          </div> <!-- container-description -->
+
+          <div class="container-description">
+            <span class="team-member-photo">
+              <img src="./bootstrap/img/team-chengandrew.png">
+            </span>
+            <div class="container-text team-member-text">
+              <p><b>Andrew Cheng</b></p> 
+              <p>Undergraduate Student</p>
+              <p>Andrew is currently completing a BS degree in Computer Science and a BA in Biomathematics at Rutgers University. His interests broadly lie in computational biology and bioinformatics.</p>
+            </div> <!-- container-text -->
+          </div> <!-- container-description -->
+
+        </div> <!-- container-block -->
 
 
-    <!-- contact tab -->
-    <script id="contact-content" type="text/x-content">
+        <div class="container-block">
+          <h1>Alumni</h1>
+          <div class="container-description">
+
+            <div class="team-alumni-text">
+              <div><b>Jie Sheng</b></div>
+              <div>
+                <p>(11/2020 – 07/2021) MS student in Data Science at University of Wisconsin–Madison</p>
+                <p>Now researcher at University of Wisconsin–Madison</p>
+              </div>
+            </div>            
+
+            <div class="team-alumni-text">
+              <div><b>Dayuan Wang</b></div>
+              <div>
+                <p>(08/2020 – 12/2020) MS student in Biostatistics at Rutgers</p>
+                <p>Now PhD student at University of South Carolina</p>
+              </div>
+            </div>
+
+            <div class="team-alumni-text">
+              <div><b>Yanzeng Li</b></div>
+              <div>
+                <p>(12/2019 – 09/2020) MS student in Biostatistics at Rutgers</p>
+                <p>Now PhD student at Michigan State University</p>
+              </div>
+            </div>            
+
+          </div> <!-- container-description -->
+        </div> <!-- container-block -->
+      </div> <!-- container-outside -->
+    </script>
+
+
+    <!-- teaching tab -->
+    <script id="teaching-content" type="text/x-content">
       <div class="container-outside">
         <div class="container-block">
           <h1>Rutgers University</h1>

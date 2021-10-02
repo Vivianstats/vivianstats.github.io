@@ -113,26 +113,13 @@ uu {
 }
 
 #nav li a:hover {
+    color:#FFE800;
     -webkit-transition:color .5s;
     -moz-transition:color .5s;
     -o-transition:color .5s;
     transition:color .5s;
 }
-#link-home:hover {
-    color:#FFE800;
-}
-#link-research:hover {
-    color:#FFE800;
-}
-#link-projects:hover {
-    color:#FFE800;
-}
-#link-about:hover {
-    color:#FFE800;
-}
-#link-contact:hover {
-	color:#FFE800;
-}
+
 
 #home-gallery {
     margin-top:50px;
@@ -301,10 +288,12 @@ uu {
     margin-bottom:10px;
 }
 
+/*
 .container-desc-col-2 {
     display:inline-block;
     width:49%;
 }
+*/
 
 .container-description-reverse {
     /* position:relative; */
@@ -367,16 +356,17 @@ uu {
 #qr-code {
     float:right;
 }
-#about-me-photo img {
+
+.about-me-photo img {
     width:250px;
     height:250px;
     overflow:hidden;
 }
-#about-me-text {
+.about-me-text {
     width:580px;
 }
 
-#about-me-text div {
+.about-me-text div {
     display:inline-block;
 }
 
@@ -460,12 +450,12 @@ uu {
 }
 
 
-#research-photo img {
+.research-photo img {
     width:300px;
     height:200px;
     overflow:hidden;
 }
-#research-text {
+.research-text {
     width:530px;
 }
 
@@ -513,13 +503,33 @@ uu {
     width:100%;
 }
 
-.research-team-name {
-    display:inline-block;
-    width:15%;
+
+.team-member-photo img {
+    width:150px;
+    height:150px;
+    overflow:hidden;
+    margin-top: -60px;
+    margin-left: 40px;
 }
 
-.research-team-desc {
-    display:inline-block;
-    width:82%;
+.team-member-text {
+    /* width:680px; */
+    width: 600px;
+    margin-top: -60px;
+    margin-left: 40px;
+}
+.team-member-text p {
+    margin-bottom: 8px;
+}
+
+
+.team-alumni-text {
+    margin-bottom: 16px;
+}    
+.team-alumni-text div {
+    display: inline-block;
+    vertical-align: text-top;
+    min-width: 150px;
+    margin-left: 40px;
 }
 
