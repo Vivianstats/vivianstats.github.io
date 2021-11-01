@@ -7,13 +7,12 @@
   		window.dataLayer = window.dataLayer || [];
   		function gtag(){dataLayer.push(arguments);}
   		gtag('js', new Date());
-
   		gtag('config', 'UA-172431779-1');
 	</script>
 
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <meta name="description" content="Wei Vivian Li's Homepage">
+    <meta name="description" content="Our lab is interested in statistical modeling and algorithm development, as well as their applications to high-throughput sequencing data in bioinformatics and clinical research.">
     <title>Wei Vivian Li Lab</title>
     <link rel='stylesheet' href='./bootstrap/css/style.css' type='text/css'>
     <!--[if lte IE 8]>
@@ -23,23 +22,30 @@
   </head>
 
   <body>
-    <div id="top-banner" class="banner">
-      <!-- <img style="position:absolute;left:450px;" src="./img/title-logo.png"> -->
-    </div>
+    <div id="top-banner" class="banner"></div>
     <div id="main-body" class="wrapper">
       <div id="site-title">
         <div id="name">Wei Vivian Li
-          <div id="subname">PhD in Statistics</div>
+          <div id="subname">Lab of Statistical Bioinformatics</div>
         </div>
         <div id="access">
           <ul id="nav">
-            <li><a id="link-teaching" href="#teaching" onclick="changeNavState(id)">TEACHING</a></li>
-            <li><a id="link-publication" href="#publication" onclick="changeNavState(id)">PUBLICATION</a></li>
-            <li><a id="link-research" href="#research" onclick="changeNavState(id)">RESEARCH</a></li>
-            <li><a id="link-team" href="#team" onclick="changeNavState(id)">TEAM</a></li>
-            <li><a id="link-pi" href="#pi" onclick="changeNavState(id)">PI</a></li>
             <li><a id="link-home" href="#home" onclick="changeNavState(id)">HOME</a></li>
+            <li><a id="link-pi" href="#pi" onclick="changeNavState(id)">PI</a></li>
+            <li><a id="link-team" href="#team" onclick="changeNavState(id)">TEAM</a></li>
+            <li><a id="link-research" href="#research" onclick="changeNavState(id)">RESEARCH</a></li>
+            <li><a id="link-publication" href="#publication" onclick="changeNavState(id)">PUBLICATION</a></li>
+            <li><a id="link-teaching" href="#teaching" onclick="changeNavState(id)">TEACHING</a></li>
           </ul>
+          <select id="sel" onchange="javascript:if(this.value){location.href=this.value}">
+            <option value="" selected="selected">MENU</option>
+            <option value="#home">HOME</option>
+            <option value="#pi">PI</option>
+            <option value="#team">TEAM</option>
+            <option value="#research">RESEARCH</option>
+            <option value="#publication">PUBLICATION</option>
+            <option value="#teaching">TEACHING</option>
+          </select>
         </div>
       </div>
       <div id="content">
@@ -60,23 +66,22 @@
             <img src="./bootstrap/img/gallery-photo3.jpg">
           </span>
           <!-- two arrows switching photos -->
-          <span id="arrows-left" onclick="window.clearInterval(timer); changePhotoLeft();timer = window.setInterval(changePhotoLeft,4000);">
+          <span id="arrows-left" class="gallery-arrow" onclick="window.clearInterval(timer); changePhotoLeft();timer = window.setInterval(changePhotoLeft,4000);">
             <img src="./bootstrap/img/arrows-left.png">
           </span>
-          <span id="arrows-right" onclick="window.clearInterval(timer); changePhotoRight();timer = window.setInterval(changePhotoRight,4000);">
+          <span id="arrows-right" class="gallery-arrow" onclick="window.clearInterval(timer); changePhotoRight();timer = window.setInterval(changePhotoRight,4000);">
             <img src="./bootstrap/img/arrows-right.png">
           </span>
-        </div>
+        </div> <!-- gallery-background -->
         <div id="gallery-text" class="gallery-content">
-          <h1>Welcome to Vivian Li Lab</h1>
           <div id="gallery-description">
-            <p id="gallery-description-showing">A collection of my research and teaching activities</p>
+            <p id="gallery-description-showing">Welcome to Vivian Li Lab</p>
             <p id="gallery-description-hidden"></p>
           </div>
-        </div>
-      </div>
-      <div>
-        <img src="./bootstrap/img/gallery-bottom.png" style="width:940px;height:40px;margin-bottom:24px;display:none">
+        </div> <!-- gallery-text -->
+      </div> <!-- home-gallery -->
+      <div id="gallery-bottom">
+        <img src="./bootstrap/img/gallery-bottom.png">
       </div>
 
       <div class="container-outside">
@@ -104,9 +109,9 @@
           </div> <!-- container-description -->
         </div> <!-- container-block -->
 
-        <div id="quick-links" class="container-block">
+        <div class="container-block">
           <h1>Quick Links</h1>
-          <div class="container-description">
+          <div id="quick-link" class="container-description">
             <div class="container-desc-col-4">
               <a href="https://github.com/Vivianstats" target="_blank">
                 <span><img src="./bootstrap/img/my-github-logo.png"></span>
@@ -118,13 +123,11 @@
                 <span><img src="./bootstrap/img/my-twitter-logo.png"></span>
               </a>
             </div>
-
             <div class="container-desc-col-4">
               <a href="https://scholar.google.com/citations?user=HzjANkQAAAAJ" target="_blank">
                 <span><img src="./bootstrap/img/my-google-scholar-logo.png"></span>
               </a>
             </div>
-
             <div class="container-desc-col-4">
               <a href="https://www.researchgate.net/profile/Wei_Vivian_Li" target="_blank">
                 <span><img src="./bootstrap/img/my-research-gate-logo.png"></span>
@@ -141,21 +144,20 @@
 
 	      <div class="container-block">
           <h1>Single-cell Genomics</h1>
-
           <div class="container-description">
-            <span id="research-photo">
-              <img src="./bootstrap/img/research-maaper.png">
-            </span>
+            <div class="research-photo">
+              <span><img src="./bootstrap/img/research-maaper.png"></span>
+            </div>
             <div class="container-text research-text">
               <h3>Analyzing Alternative Polyadenylation (APA)</h3>
-              <p>MAAPER is a computational method for examining APA using 3' end-linked reads. MAAPER uses a probabilistic model to predict PASs for 3' end-linked  reads with high accuracy and sensitivity, and examines different types of APA events, including those in 3'UTRs and introns, with robust statistics. We show MAAPER's accuracy with data from both bulk and single cell RNA samples and its applicability in unpaired or paired experimental designs. [ <a href="https://www.biorxiv.org/content/10.1101/2021.03.21.436343v1" target="_blank">Preprint</a> ]</p>
+              <p>MAAPER is a computational method for examining APA using 3' end-linked reads. MAAPER uses a probabilistic model to predict PASs for 3' end-linked  reads with high accuracy and sensitivity, and examines different types of APA events, including those in 3'UTRs and introns, with robust statistics. We show MAAPER's accuracy with data from both bulk and single cell RNA samples and its applicability in unpaired or paired experimental designs. [ <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02429-5" target="_blank">Paper</a> ]</p>
             </div> <!-- container-text -->
           </div> <!-- container-description -->
 
           <div class="container-description">
-            <span class="research-photo">
-              <img src="./bootstrap/img/research-sclink.png">
-            </span>
+            <div class="research-photo">
+              <span><img src="./bootstrap/img/research-sclink.png"></span>
+            </div>
             <div class="container-text research-text">
               <h3>Constructing Gene Co-expression Networks</h3>
               <p>A system-level understanding of the regulation and coordination mechanisms of gene expression is essential to studying the complexity of biological processes in health and disease. Therefore, we propose the scLink method, which uses statistical network modeling to understand the co-expression relationships among genes and construct sparse gene co-expression networks from single-cell gene expression data. [ <a href="https://doi.org/10.1016/j.gpb.2020.11.006" target="_blank">Paper</a> ]</p>
@@ -163,9 +165,9 @@
           </div> <!-- container-description -->
 
           <div class="container-description">
-            <span class="research-photo">
-              <img src="./bootstrap/img/research-scimpute.png">
-            </span>
+            <div class="research-photo">
+              <span><img src="./bootstrap/img/research-scimpute.png"></span>
+            </div>
             <div class="container-text research-text">
               <h3>Imputation of scRNA-seq Data</h3>
               <p>scImpute is a statistical method to accurately and robustly impute the dropouts in scRNA-seq data. scImpute automatically identifies likely dropouts, and only perform imputation on these values without introducing new biases to the rest data. scImpute is shown to identify likely dropouts, enhance the clustering of cell subpopulations, improve the accuracy of differential expression analysis, and aid the study of gene expression dynamics. [ <a href="https://www.nature.com/articles/s41467-018-03405-7" target="_blank">Paper</a> ]</p>
@@ -173,9 +175,9 @@
           </div> <!-- container-description -->
 
           <div class="container-description">
-            <span class="research-photo">
-              <img src="./bootstrap/img/research-scdesign.png">
-            </span>     
+            <div class="research-photo">
+              <span><img src="./bootstrap/img/research-scdesign.png"></span>
+            </div>     
             <div class="container-text research-text">
               <h3>Rational scRNA-seq Experimental Design</h3>
               <p>We present a flexible and robust simulator, scDesign, the first statistical framework for researchers to quantitatively assess practical scRNA-seq experimental design in the context of differential gene expression analysis. In addition to experimental design, scDesign also assists computational method development by generating high-quality synthetic scRNA-seq datasets under customized experimental settings. 
@@ -188,18 +190,18 @@
         <div class="container-block">
           <h1>RNA Transcript Assembly and Quantification</h1>
           <div class="container-description">
-            <span class="research-photo">
-              <img src="./bootstrap/img/research-aide.png">
-            </span>	    
+            <div class="research-photo">
+              <span><img src="./bootstrap/img/research-aide.png"></span>
+            </div>	    
             <div class="container-text research-text">
               <h3>Annotation-assisted Transcript Reconstruction</h3>
               <p>AIDE is a statistical method which identifies full-length mRNA isoforms from a novel perspective: using the likelihood ratio test to find novel isoforms in a stepwise manner given annotated isoforms, by prioritizing and selectively borrowing information from the annotated isoforms. AIDE is the first approach that directly controls false isoform discoveries by implementing the statistical model selection principle. [ <a href="https://genome.cshlp.org/content/29/12/2056" target="_blank">Paper</a> ]</p>      
             </div> <!-- container-text -->
           </div> <!-- container-description -->
           <div class="container-description">
-            <span class="research-photo">
-              <img src="./bootstrap/img/research-msiq.png">
-            </span>	    
+            <div class="research-photo">
+              <span><img src="./bootstrap/img/research-msiq.png"></span>
+            </div>	    
             <div class="container-text research-text">
               <h3>Transcript Quantification of Multiple RNA-seq Samples</h3>
               <p>We develop a method, which we call "joint modeling of multiple RNA-seq samples for accurate isoform quantification" (MSIQ), for more robust isoform quantification by integrating multiple RNA-seq samples under a Bayesian framework. Our method aims to (1) identify a consistent group of samples with homogeneous quality and (2) improve isoform quantification accuracy by jointly modeling multiple RNA-seq samples and allowing for higher weights on the consistent group. [ <a href="https://projecteuclid.org/euclid.aoas/1520564482" target="_blank">Paper</a> ]</p>	      
@@ -210,9 +212,9 @@
         <div class="container-block">
           <h1>Comparative Bioinformatics</h1>
           <div class="container-description">
-            <span class="research-photo">
-              <img src="./bootstrap/img/research-trom.png">
-            </span>	    
+            <div class="research-photo">
+              <span><img src="./bootstrap/img/research-trom.png"></span>
+            </div>	    
             <div class="container-text research-text">
               <h3>Transcriptome Overlap Measure</h3>
               <p>TROM is a testing-based method for comparing transcriptomes within or between different species, and provide a different perspective about capturing transcriptomic similarity. The TROM method focuses on identifying associated genes that capture molecular characteristics of biological samples, and subsequently comparing the biological samples by testing the overlap of their associated genes. [ <a href="https://link.springer.com/article/10.1007/s12561-016-9163-y" target="_blank">Paper</a> ]</p>	      
@@ -220,23 +222,22 @@
           </div> <!-- container-description -->
 
           <div class="container-description">
-            <span class="research-photo">
-              <img src="./bootstrap/img/research-epom.png">
-            </span>	    
+            <div class="research-photo">
+              <span><img src="./bootstrap/img/research-epom.png"></span>
+            </div>	    
             <div class="container-text research-text">
               <h3>Epigenome Overlap Measure</h3>
               <p>We study the relationships among tissue and cell types from a new perspective: the similarity of tissue and cell types in terms of histone modification marks evaluated in relevant chromatin states. The proposed EPOM measure is capable of finding a clear correspondence map of biological samples from different tissue and cell types. The identified associated enhancers and promoters provide a comprehensive catalog to study distinct biological processes and disease variants in different tissue and cell types. [ <a href="https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-015-2303-9" target="_blank">Paper</a> ]</p>      
             </div> <!-- container-text -->
           </div> <!-- container-description -->
-
         </div> <!-- container-block -->
 
         <div class="container-block">
           <h1>Statistical Learning</h1>
           <div class="container-description">
-            <span class="research-photo">
-              <img src="./bootstrap/img/research-npcs.png">
-            </span>
+            <div class="research-photo">
+              <span><img src="./bootstrap/img/research-npcs.png"></span>
+            </div>
             <div class="container-text research-text">
               <h3>Asymmetric Classification</h3>
               <p>We propose an umbrella algorithm to estimate the population type I error control achieved by multiple cost-sensitive learning approaches.  Our algorithm for the first time establishes a connection between cost-sensitive learning and the Neyman-Pearson classification paradigm, which minimizes the population type II error while enforcing an upper bound on the population type I error. This algorithm can be applied in many real problems, such as disease diagnosis. [ <a href="https://arxiv.org/abs/2012.14951" target="_blank">Paper</a> ]</p>      
@@ -315,11 +316,8 @@
 
         <div class="container-block">
           <h1>Software</h1>
-          <div class="container-description-reverse" style="margin-top:60px;">
-            <span>
-              <img src="./bootstrap/img/github-logo.png">
-            </span>
-            <div>
+          <div class="container-description" style="margin-top:100px;">
+            <div class="software-text">
               <h3>Single-cell Transcriptomics</h3>
               <ul>
       	        <li><p><a href="https://github.com/Vivianstats/scImpute" target="_blank">sclmpute</a>: Accurate and robust imputation of scRNA-seq data</p></li>
@@ -328,13 +326,13 @@
                 <li><p><a href="https://github.com/Vivianstats/MAAPER" target="_blank">MAAPER</a>: Analyzing alternative polyadenylation using 3' end-linked reads</p></li>
               </ul>
             </div>
-          </div> <!-- container-description-reverse -->
+            <div class="software-photo">
+              <span><img src="./bootstrap/img/github-logo.png"></span>
+            </div>            
+          </div> <!-- container-description -->
 
-          <div class="container-description-reverse">
-            <span>
-              <img src="./bootstrap/img/github-logo.png">
-            </span>
-            <div>
+          <div class="container-description" style="margin-top:20px;">
+            <div class="software-text">
       	      <h3>Bulk Tissue Transcriptomics</h3>
       	      <ul>
       	        <li><p><a href="https://github.com/Vivianstats/AIDE" target="_blank">AIDE</a>: Annotation-assisted transcript reconstruction and quantification</p></li>
@@ -342,19 +340,22 @@
                 <li><p><a href="https://github.com/Vivianstats/MAAPER" target="_blank">MAAPER</a>: Analyzing alternative polyadenylation using 3' end-linked reads</p></li>          
       	      </ul>
             </div>
-          </div> <!-- container-description-reverse -->
+            <div class="software-photo">
+              <span><img src="./bootstrap/img/github-logo.png"></span>
+            </div>            
+          </div> <!-- container-description -->
 
-          <div class="container-description-reverse">
-            <span>
-              <img src="./bootstrap/img/cran-logo.png">
-            </span>
-            <div>
+          <div class="container-description" style="margin-top:20px;">
+            <div class="software-text">
               <h3>Comparative Bioinformatics</h3>
               <ul>
                 <li><p><a href="https://github.com/Vivianstats/TROM" target="_blank">TROM</a>: Comparing transcriptomes from the same or different species</p></li>
                 <li><p><a href="https://github.com/ruochenj/EPOM_R" target="_blank">EPOM</a>: Comparing epigenomes of biological samples</p></li>
               </ul>
             </div>
+            <div class="software-photo">
+              <span><img src="./bootstrap/img/cran-logo.png"></span>
+            </div>            
           </div> <!-- container-description-reverse -->
 
           <!-- only to add a little space at bottom -->
@@ -370,20 +371,21 @@
         <div class="container-block">
           <h1>About PI</h1>
           <div class="container-description">
-            <span class="about-me-photo">
-              <img src="./bootstrap/img/about-me.png">
-            </span>
-            <div class="container-text about-me-text">
+            <div id="about-me-photo">
+              <span><img src="./bootstrap/img/about-me.png"></span>
+            </div>
+            <div id="about-me-text" class="container-text">
               <p>Vivian (Wei) Li is an Assistant Professor in the <a href="https://sph.rutgers.edu/concentrations/biostatistics-epidemiology/index.html" target="_blank">Department of Biostatistics and Epidemiology</a> at the <a href="https://www.rutgers.edu/" target="_blank">Rutgers University</a>. She is also a faculty member in <a href="https://molbiosci.rutgers.edu/current-students/phd-programs" target="_blank">Rutgers Graduate Programs in Molecular Biosciences</a> and <a href="https://iqb.rutgers.edu/" target="_blank">Graduate Programs in Quantitative Biomedicine</a>. Vivian obtained her Ph.D. degree in Statistics from the University of California, Los Angeles, where she was working with Dr. Jingyi Jessica Li. Prior to joining UCLA, Vivian received her B.S. in Statistics from the School of Mathematics and Statistics at Huazhong University of Science and Technology. [ <a href="./bootstrap/doc/CV_VLi_202108.pdf" target="_blank">Vivian's CV</a> ]</p>	
-              <br>
-              <div style="width:15%;">
-                <p>Address:</p>
-                <p>Email:</p>
+
+              <div class="about-me-text-info">
+                <p style="font-weight:bold;width:15%;">Address:</p>
+                <p style="width:80%;">School of Public Health, Room 210, Rutgers University.</p>
               </div>
-              <div style="width:80%;">
-                <p>School of Public Health, Room 210, Rutgers University.</p>
-                <p>vivian.li@rutgers.edu</p>
+              <div class="about-me-text-info">
+                <p style="font-weight:bold;width:15%;">Email:</p>
+                <p style="width:80%;">vivian.li@rutgers.edu</p>
               </div>
+
             </div> <!-- container-text -->
           </div> <!-- container-description -->
         </div> <!-- container-block -->		
@@ -406,12 +408,14 @@
           </div> <!-- container-description -->
         </div> <!-- container-block -->
 
-
         <div id="fund-agency" class="container-block">
           <h1>Funding Agencies</h1>
           <div class="container-description">
-            <div class="container-desc-col-1">
-              <span><img src="./bootstrap/img/funding-agencies.png"></span>
+            <div class="container-desc-col-2">
+              <span><img src="./bootstrap/img/funding-agency-nih.png"></span>
+            </div>
+            <div class="container-desc-col-2">
+              <span><img src="./bootstrap/img/funding-agency-nj.png"></span>
             </div>
           </div> <!-- container-description -->
         </div> <!-- container-block -->
@@ -430,10 +434,10 @@
             <p>We are hiring at all levels, including graduate student/research assistant/postdoc. We also welcome intern students for research training, both remotely and on-site. Please contact Dr. Vivian Li if you are interested in using statistical and/or computational methods to answer biological questions and have a background in statistics, biostatistics, bioinformatics, computer science, or other related fields.</p>
           </div>
 
-          <div class="container-description">
-            <span class="team-member-photo">
-              <img src="./bootstrap/img/team-fushiwei.png">
-            </span>
+          <div class="container-description team-member-block">
+            <div class="team-member-photo">
+              <span><img src="./bootstrap/img/team-fushiwei.png"></span>
+            </div>
             <div class="container-text team-member-text">
               <p><b>Shiwei Fu</b></p> 
               <p>PhD Student</p>
@@ -441,10 +445,10 @@
             </div> <!-- container-text -->
           </div> <!-- container-description -->
 
-          <div class="container-description">
-            <span class="team-member-photo">
-              <img src="./bootstrap/img/team-liujiayi.png">
-            </span>
+          <div class="container-description team-member-block">
+            <div class="team-member-photo">
+              <span><img src="./bootstrap/img/team-liujiayi.png"></span>
+            </div>
             <div class="container-text team-member-text">
               <p><b>Jiayi Liu</b></p> 
               <p>PhD Student</p>
@@ -452,10 +456,10 @@
             </div> <!-- container-text -->
           </div> <!-- container-description -->
 
-          <div class="container-description">
-            <span class="team-member-photo">
-              <img src="./bootstrap/img/team-wangzhihan.png">
-            </span>
+          <div class="container-description team-member-block">
+            <div class="team-member-photo">
+              <span><img src="./bootstrap/img/team-wangzhihan.png"></span>
+            </div>
             <div class="container-text team-member-text">
               <p><b>Zhihan Wang</b></p> 
               <p>MS Student</p>
@@ -463,32 +467,29 @@
             </div> <!-- container-text -->
           </div> <!-- container-description -->
 
-          <div class="container-description">
-            <span class="team-member-photo">
-              <img src="./bootstrap/img/team-chengandrew.png">
-            </span>
+          <div class="container-description team-member-block">
+            <div class="team-member-photo">
+              <span><img src="./bootstrap/img/team-chengandrew.png"></span>
+            </div>
             <div class="container-text team-member-text">
               <p><b>Andrew Cheng</b></p> 
               <p>Undergraduate Student</p>
               <p>Andrew is currently completing a BS degree in Computer Science and a BA in Biomathematics at Rutgers University. His interests broadly lie in computational biology and bioinformatics.</p>
             </div> <!-- container-text -->
           </div> <!-- container-description -->
-
         </div> <!-- container-block -->
 
 
         <div class="container-block">
           <h1>Alumni</h1>
           <div class="container-description">
-
             <div class="team-alumni-text">
               <div><b>Jie Sheng</b></div>
               <div>
                 <p>(11/2020 – 07/2021) MS student in Data Science at University of Wisconsin–Madison</p>
                 <p>Now researcher at University of Wisconsin–Madison</p>
               </div>
-            </div>            
-
+            </div>
             <div class="team-alumni-text">
               <div><b>Dayuan Wang</b></div>
               <div>
@@ -496,7 +497,6 @@
                 <p>Now PhD student at University of South Carolina</p>
               </div>
             </div>
-
             <div class="team-alumni-text">
               <div><b>Yanzeng Li</b></div>
               <div>
@@ -517,7 +517,7 @@
         <div class="container-block">
           <h1>Rutgers University</h1>
           <div class="container-description">
-           <div>
+           <div class="container-text">
               <h3>Instructor</h3>
               <ul>
                 <li>Fall 2021, BIST 0613: Biostatistics Theory I</li>
@@ -525,20 +525,19 @@
                 <li>Spring 2020, BIST 0725: Generalized Linear Models</li>
               </ul>
             </div>
-		  </div>
-        </div>
+          </div> <!-- container-description -->
+        </div> <!-- container-block -->
 
         <div class="container-block">
           <h1>University of California, Los Angeles</h1>
           <div class="container-description">
-
-            <div>
+            <div class="container-text">
               <h3>Graduate Student Instructor</h3>
               <ul>
 	              <li>Fall 2018, STATS 495A: Teaching College Statistics</li>
               </ul>
             </div>
-            <div>
+            <div class="container-text">
               <h3>Teaching Assistant</h3>
               <ul>
                 <li>Spring 2018, STATS 207: Statistical Learning with Sparsity</li>
@@ -555,9 +554,9 @@
                 <li>Fall 2014, STATS 100A: Introduction to Probability</li>
               </ul>
             </div>			
-          </div>
-        </div>
-      </div>
+          </div> <!-- container-description -->
+        </div> <!-- container-block -->
+      </div> <!-- container-outside -->
     </script>
 
     
@@ -567,14 +566,11 @@
     <script type="text/javascript" src="./bootstrap/js/backtop.js"></script>
     <!-- change gallery photo and description when click on arrows -->
     <script type="text/javascript">
-      var gallery_photo_titles = new Array(
+      var gallery_photo_descriptions = new Array(
         "Welcome to Vivian Li Lab",
         "Rutgers School of Public Health",
         "Rutgers Winants Hall");
-      var gallery_photo_descriptions = new Array(
-        "A collection of my research and teaching activities",
-        "Hornered to be an assistant professor at SPH",
-        "A historic educational building located on the Queens Campus of Rutgers");
+      var gallery_photo_titles = gallery_photo_descriptions; /* legacy */
       /* set up a timer to change gallery photo in time */
       var timer = window.setInterval("changePhotoRight()", 8000);
     </script>
@@ -594,7 +590,7 @@
   <!--[if lte IE 8]>
   <div id="warning">
     <p class="wrapper">*Detecting the current browser version is Microsoft Internet Explorer 8 (IE8) or below (IE7 IE6 etc.).</p>
-    <p class="wrapper">**It is highly recommended to use Chrome / Firefox / IE9 to gain the best animation experience of my portfolio website.</p>
+    <p class="wrapper">**It is highly recommended to use Chrome / Firefox / IE9 to gain the best experience of this website.</p>
   </div>
   <![endif]-->
 </html>

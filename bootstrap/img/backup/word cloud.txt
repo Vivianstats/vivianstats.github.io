@@ -34,7 +34,6 @@
 1 Python
 1 computation
 1 measurement
-1 LaTex
 1 computer
 
 
