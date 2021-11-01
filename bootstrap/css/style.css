@@ -197,8 +197,7 @@ uu {
 }
 #motto span {
     float:right;
-    margin-left:20px;
-    margin-top:20px;
+    margin: 20px 10px auto auto;
 }
 .backToTop {
     display: none;
