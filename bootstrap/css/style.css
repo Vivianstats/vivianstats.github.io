@@ -538,6 +538,9 @@ uu {
     width:32%;
     overflow:hidden;
 }
+.software-photo img {
+    margin-top: 20px;
+}
 .software-text {
     width:64%;
     margin-right: 2%;
@@ -550,109 +553,6 @@ uu {
 .software-text ul li {
     margin-bottom:4px;
 }
-
-
-
-/*
-.container-description {
-    position:relative;
-    margin-top:100px;
-    margin-left:40px;
-    margin-right:40px;
-    bottom:40px;
-}
-.container-description div {
-    display: inline-block;
-    vertical-align: top; 
-}
-.container-description a {
-    color:#AC3B61;
-    text-decoration:none;
-    -webkit-transition:color .5s;
-    -moz-transition:color .5s;
-    -o-transition:color .5s;
-    transition:color .5s;
-}
-.container-description a:hover {
-    color:#501B1D;
-    -webkit-transition:color .5s;
-    -moz-transition:color .5s;
-    -o-transition:color .5s;
-    transition:color .5s;
-}
-.container-description li {
-    margin-bottom:10px;
-}
-.container-description span img {
-    width: 100%;
-    height: 100%;
-}
-*/
-
-
-
-
-
-
-
-
-
-.container-description-reverse div {
-    float:left;
-    margin-top:0px;
-    margin-left:40px;
-    text-align:left;
-}
-.container-description-reverse h3, p {
-    margin-top:0px;
-    margin-bottom:0px;
-}
-.container-description-reverse a {
-    color:#AC3B61;
-    /* font-weight:bold; */
-    text-decoration:none;
-    -webkit-transition:color .5s;
-    -moz-transition:color .5s;
-    -o-transition:color .5s;
-    transition:color .5s;
-}
-.container-description-reverse a:hover {
-    color:#501B1D;
-    -webkit-transition:color .5s;
-    -moz-transition:color .5s;
-    -o-transition:color .5s;
-    transition:color .5s;
-}
-
-
-
-
-
-
-
-
-.opensource-projects {
-    display:inline-block;
-    width:45%;
-    margin-left:20px;
-}
-
-.opensource-projects h3 {
-    /* color:#ddd; */
-    font-size:20px;
-}
-.opensource-screenshots {
-    margin-top:10px;
-    width:330px;
-    height:150px;
-    background-color:#EEE2DC;
-    margin-bottom:10px;
-}
-.opensource-screenshots img {
-    margin-top:15px;
-    margin-left:15px;
-}
-
 
 
 
