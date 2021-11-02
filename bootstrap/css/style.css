@@ -344,13 +344,15 @@ uu {
     color:#AC3B61;
     font-size: 28px;
     line-height: 32px;
+    height: 80px;
 }
 .container-description {
     position:relative;
-    margin-top:100px;
+    /* margin-top:100px; */
+    margin-top: 50px;
     margin-left:40px;
     margin-right:40px;
-    bottom:40px;
+    bottom:30px;
 }
 .container-description div {
     display: inline-block;
@@ -396,6 +398,12 @@ uu {
     width:22%;
     margin: 1% 1%;
 }
+#news ul {
+    margin-top: 0;
+}
+#news summary {
+    margin-bottom: 10px;
+}
 #quick-link {
     text-align: center;
 }
@@ -420,14 +428,15 @@ uu {
 
 .container-text {
     position:relative;
+    margin-bottom: 10px;
 }
 .container-text h3 {
-    margin-top:0px;
+    margin-top:0;
     margin-bottom:10px;
 }
 .container-text p {
-    margin-top:0px;
-    margin-bottom:0px;
+    margin-top:0;
+    margin-bottom:0;
 }
 #about-me-photo {
     width: 38%;
@@ -444,9 +453,6 @@ uu {
 .about-me-text-info p {
     display: inline;
 }
-.team-member-block {
-    margin-top: 40px;
-}
 .team-member-photo {
     width: 18%;
     overflow:hidden;
@@ -459,15 +465,11 @@ uu {
 .team-member-text p {
     margin-bottom: 8px;
 }
+.team-alumni-block {
+    width: 100%;
+    margin-bottom: 30px;
+}
 
-.team-alumni-text {
-    margin-bottom: 16px;
-}
-.team-alumni-text div {
-    display: inline-block;
-    vertical-align: text-top;
-    min-width: 150px;
-}
 
 
 #contact-photo {
@@ -525,6 +527,7 @@ uu {
     -o-transition:color .5s;
     transition:color .5s;
 }
+
 .research-photo {
     width:36%;
     overflow:hidden;
@@ -534,17 +537,18 @@ uu {
 .research-text {
     width:60%;
 }
+
+
+
 .software-photo {
-    width:32%;
+    width:30%;
     overflow:hidden;
 }
-.software-photo img {
-    margin-top: 20px;
-}
 .software-text {
-    width:64%;
+    width:66%;
     margin-right: 2%;
     margin-bottom: 10px;
+    margin-top: -10px;
 }
 .software-text ul {
     margin-bottom:0;
