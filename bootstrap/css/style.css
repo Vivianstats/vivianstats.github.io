@@ -429,6 +429,7 @@ uu {
 .container-text {
     position:relative;
     margin-bottom: 10px;
+    width: 100%;
 }
 .container-text h3 {
     margin-top:0;
@@ -483,7 +484,7 @@ uu {
 }
 #contact {
     list-style-type:none;
-    padding-left:0px;
+    padding-left:0;
     margin-bottom:18px;
 }
 #contact li a {
