@@ -450,6 +450,7 @@ uu {
 }
 .about-me-text-info {
     margin-top: 20px;
+    display: block !important;
 }
 .about-me-text-info p {
     display: inline;
